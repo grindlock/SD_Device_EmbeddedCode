@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="NewBLE_Test\SDBLEE\Header Files\SD_I2C.h">
+<ExpandedNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\TopDesign</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\Pins</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\Analog</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\Clocks</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\Interrupts</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\System</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\Directives</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr\Flash Security</v>
+<v>NewBLE_Test\SDBLEE\Header Files</v>
+<v>NewBLE_Test\SDBLEE\Header Files\cyapicallbacks.h</v>
+<v>NewBLE_Test\SDBLEE\Header Files\SD_I2C.h</v>
+<v>NewBLE_Test\SDBLEE\Source Files</v>
+<v>NewBLE_Test\SDBLEE\Source Files\main.c</v>
+<v>NewBLE_Test\SDBLEE\Source Files\SD_I2C.c</v>
+<v>NewBLE_Test\SDBLEE\Generated_Source\PSoC4</v>
+<v>NewBLE_Test\SDBLEE\Generated_Source\PSoC4\BLE_1</v>
+<v>NewBLE_Test\SDBLEE\Generated_Source\PSoC4\cy_lfclk</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\TopDesign</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.cydwr</v>
+<v>NewBLE_Test\SDBLEE\Header Files</v>
+<v>NewBLE_Test\SDBLEE\Header Files\cyapicallbacks.h</v>
+<v>NewBLE_Test\SDBLEE\Header Files\SD_I2C.h</v>
+<v>NewBLE_Test\SDBLEE\Source Files</v>
+<v>NewBLE_Test\SDBLEE\Source Files\main.c</v>
+<v>NewBLE_Test\SDBLEE\Source Files\SD_I2C.c</v>
+<v>NewBLE_Test\SDBLEE\Generated_Source</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\TopDesign</v>
+<v>NewBLE_Test\SDBLEE\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\TopDesign</v>
+<v>NewBLE_Test\SDBLEE\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\CortexM0</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_bless_isr.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_custom.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_eventHandler.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_gatt.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Blue.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Blue_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Green.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Green_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C_BOOT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C_INT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C_MASTER.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_SCB_IRQ.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_SCBCLK.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_scl.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_scl_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_sda.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_sda_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\isr_1.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Red.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Red_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\SD_I2C.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\UART_1_AsmGnu.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\SDBLEE.hex</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\SDBLEE.map</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.gpdsc</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE.rpt</v>
+<v>NewBLE_Test\SDBLEE\SDBLEE_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\CortexM0</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_bless_isr.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_custom.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_eventHandler.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_gatt.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Blue.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Blue_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Green.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\Green_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_BOOT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C_BOOT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C_INT.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_I2C_MASTER.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_PM.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_SCB_IRQ.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_SCBCLK.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_scl.lst</v>
+<v>NewBLE_Test\SDBLEE\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_1_scl_PM.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\PSoC 4 Architecture TRM</v>
+<v>NewBLE_Test\SDBLEE\PSoC 4200 BLE Family Datasheet</v>
+<v>NewBLE_Test\SDBLEE\System Reference Guides</v>
+<v>NewBLE_Test\SDBLEE\System Reference Guides\cy_boot_v5_80</v>
+<v>NewBLE_Test\SDBLEE\System Reference Guides\cy_lfclk_v1_20</v>
+<v>NewBLE_Test\SDBLEE\BLE_v3_61.pdf</v>
+<v>NewBLE_Test\SDBLEE\cy_gsref_v2_10.pdf</v>
+<v>NewBLE_Test\SDBLEE\cy_isr_v1_70.pdf</v>
+<v>NewBLE_Test\SDBLEE\cy_pins_v2_20</v>
+<v>NewBLE_Test\SDBLEE\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>NewBLE_Test\SDBLEE\SCB_P4_v4_0.pdf</v>
+<v>NewBLE_Test\SDBLEE\SW_Tx_UART_v1_50.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>NewBLE_Test</v>
+<v>NewBLE_Test\SDBLEE</v>
+<v>NewBLE_Test\SDBLEE\PSoC 4 Architecture TRM</v>
+<v>NewBLE_Test\SDBLEE\PSoC 4200 BLE Family Datasheet</v>
+<v>NewBLE_Test\SDBLEE\System Reference Guides</v>
+<v>NewBLE_Test\SDBLEE\System Reference Guides\cy_boot_v5_80</v>
+<v>NewBLE_Test\SDBLEE\System Reference Guides\cy_lfclk_v1_20</v>
+<v>NewBLE_Test\SDBLEE\BLE_v3_61.pdf</v>
+<v>NewBLE_Test\SDBLEE\cy_gsref_v2_10.pdf</v>
+<v>NewBLE_Test\SDBLEE\cy_isr_v1_70.pdf</v>
+<v>NewBLE_Test\SDBLEE\cy_pins_v2_20</v>
+<v>NewBLE_Test\SDBLEE\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>NewBLE_Test\SDBLEE\SCB_P4_v4_0.pdf</v>
+<v>NewBLE_Test\SDBLEE\SW_Tx_UART_v1_50.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\SDBLEE.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\SDBLEE.cydsn\SDBLEE.cydwr" />
+<name v=".\SDBLEE.cydsn\main.c" />
+<name v=".\SDBLEE.cydsn\SD_I2C.h" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1015, 532" SelectedTabbedMdiWindow="fd0f2fc0-0542-4795-af95-814c14e36b4e"><DocumentWindow Key="C:\Users\sergio\Documents\PSoC Creator\NewBLE_Test\SDBLEE.cydsn\TopDesign\TopDesign.cysch" Guid="8aea01a8-e96d-4eac-85c9-d6698e221141" /><DocumentWindow Key="C:\Users\sergio\Documents\PSoC Creator\NewBLE_Test\SDBLEE.cydsn\SDBLEE.cydwr" Guid="ccc9063c-0edd-47d1-b717-61daadfa7ae3" /><DocumentWindow Key="C:\Users\sergio\Documents\PSoC Creator\NewBLE_Test\SDBLEE.cydsn\main.c" Guid="fd0f2fc0-0542-4795-af95-814c14e36b4e" /><DocumentWindow Key="C:\Users\sergio\Documents\PSoC Creator\NewBLE_Test\SDBLEE.cydsn\SD_I2C.h" Guid="65890d0a-fb29-49b0-8ad3-c8060b899c89" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
