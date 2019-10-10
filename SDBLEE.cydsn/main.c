@@ -50,10 +50,13 @@ struct dataCollected {
     float currentCompressor;
     float currentFan; 
     float current;
-    int airFlow;
-    int accX;
-    int accY;
-    int accZ;
+    float lineFreqComp;
+    float lineFreqFan;
+    float linFreq;
+    float airFlow;
+    uint16 accX;
+    uint16 accY;
+    uint16 accZ;
     
 };
 

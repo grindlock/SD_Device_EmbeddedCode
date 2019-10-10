@@ -12,12 +12,12 @@
 
 #include "project.h"
 
-// Si7006-A20 datasheet  https://www.silabs.com/documents/public/data-sheets/Si7006-A20.pdf
+// Si7006-A20 datasheet  https://www.silabs.com/documents/public/data-sheets/Si7006-A20.pdf (humidity)
 #define ADDR_HUMTEMP      (0x40) // I2C address pag. 18
 #define REG_HUMSENSOR_HUM (0xE5) // Read humidity register hold master mode pag. 18
 #define REG_HUMSENSOR_TEM (0xE3) // Get temperature from the humidity reading pag. 18
 
-// TMP431 and TMP432 datasheet http://www.ti.com/lit/ds/symlink/tmp432.pdf
+// TMP431 and TMP432 datasheet http://www.ti.com/lit/ds/symlink/tmp432.pdf (temperature)
 #define ADDR_TEMP431 (0x4C)
 #define REG_LH_TMP431 (0x00) // Read High Byte of the local temperature
 #define REG_LL_TMP431 (0x15)//  Read low Byte of the local temperature
@@ -30,7 +30,7 @@
 #define REG_MANUF_ID432 (0xFE) // Read manufacture id = 0x55
 #define REG_TMP432ID   (0xFD) // Read the device ID = 0x32
 
-// MCP39F521 datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20005442A.pdf
+// MCP39F521 datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20005442A.pdf (power monitoring)
 #define ADDR_POWER1 ()
 #define ADDR_POWER2 ()
 #define ADDR_POWER3 ()
@@ -40,8 +40,8 @@
 #define REG_POWER_STATUS (0x02)
 #define REG_POWER_VER (0x04)
 
-// BMA253 datasheet https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA253-DS000.pdf
-#define ADDR_ACC ()
+// BMA253 datasheet https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA253-DS000.pdf (accelerometer)
+#define ADDR_ACC (0x18)
 #define REG_ACCID (0x00)
 #define REG_XLSB (0x02)
 #define REG_XMSB (0x03)
