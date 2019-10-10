@@ -71,14 +71,65 @@ uint8 temperature = 0;
     return 0;
 }
 
-uint8 current_read(uint32 address, uint8 reg){
+float current_read(uint32 address, uint8 reg){
+    uint8 write_buff[1] ={0};
+    write_buff[0] = reg;
+    
+  volatile  uint8 read_buff[4] = {0,0,0,0};
+    
+    I2C_1_I2CMasterWriteBuf(address, (uint8 *) write_buff, 1, I2C_1_I2C_MODE_NO_STOP);
+    while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_WR_CMPLT) == 0){}
+    
+     I2C_1_I2CMasterReadBuf(address, (uint8 *) read_buff, 4, I2C_1_I2C_MODE_REPEAT_START);
+    while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_RD_CMPLT) == 0){}
+    
+    int tempCurrent = (read_buff[0] << 24 | read_buff[1] << 16 | read_buff[2] << 8 | read_buff[3]);
+    float formattedCurrent = tempCurrent/10000.f;
  
-    return 0;
+    return formattedCurrent;
 }
 
-uint8 voltage_read(uint32 address, uint8 reg){
- 
-    return 0;
+float voltage_read(uint32 address, uint8 reg){
+    
+    uint16 tempVolt = Read_sensor_word(address, reg);
+    float formattedVolt = tempVolt/10.0f;
+    return formattedVolt;
 }
 
+float line_frequency_read(uint32 address, uint8 reg){
+    
+    uint16 temLFreq = Read_sensor_word(address, reg);
+    float formattedLineFrequency = temLFreq/1000.0f;
+    return formattedLineFrequency;
+}
+
+uint16 x_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB){
+    uint8 lsb = Read_sensor_byte(address, regLSB);
+    uint8 msb = Read_sensor_byte(address, regMSB);
+    
+    uint16 x = msb << 8 | (lsb & 0xf0);
+    x = x >> 4;
+    
+    return x;
+}
+
+uint16 y_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB){
+    uint8 lsb = Read_sensor_byte(address, regLSB);
+    uint8 msb = Read_sensor_byte(address, regMSB);
+    
+    uint16 y = msb << 8 | (lsb & 0xf0);
+    y = y >> 4;
+    
+    return y;
+}
+
+uint16 z_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB){
+    uint8 lsb = Read_sensor_byte(address, regLSB);
+    uint8 msb = Read_sensor_byte(address, regMSB);
+    
+    uint16 z = msb << 8 | (lsb & 0xf0);
+    z = z >> 4;
+    
+    return z;
+}
 /* [] END OF FILE */

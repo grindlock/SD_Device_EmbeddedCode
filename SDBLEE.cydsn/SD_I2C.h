@@ -30,16 +30,29 @@
 #define REG_MANUF_ID432 (0xFE) // Read manufacture id = 0x55
 #define REG_TMP432ID   (0xFD) // Read the device ID = 0x32
 
-// MCP39F511 datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20005442A.pdf
+// MCP39F521 datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20005442A.pdf
 #define ADDR_POWER1 ()
 #define ADDR_POWER2 ()
 #define ADDR_POWER3 ()
 #define REG_VOLTRMS (0x06)
 #define REG_CURRRMS (0x0E)
+#define REG_LINEFREQ (0x08)
 #define REG_POWER_STATUS (0x02)
 #define REG_POWER_VER (0x04)
 
+// BMA253 datasheet https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA253-DS000.pdf
+#define ADDR_ACC ()
+#define REG_ACCID (0x00)
+#define REG_XLSB (0x02)
+#define REG_XMSB (0x03)
+#define REG_YLSB (0x04)
+#define REG_YMSB (0x05)
+#define REG_ZLSB (0x06)
+#define REG_ZMSB (0x07)
+
+
 uint16 Read_sensor_word(uint32 address, uint8 reg);
+
 uint8  Read_sensor_byte(uint32 address, uint8 reg);
 
 int test_sensor(uint32 address, uint8 reg);
@@ -50,9 +63,17 @@ uint8 temperature_local_read(uint32 address, uint8 reg);
 
 uint8 temperature_remote_read(uint32 address, uint8 reg);
 
-uint8 current_read(uint32 address, uint8 reg);
+float current_read(uint32 address, uint8 reg);
 
-uint8 voltage_read(uint32 address, uint8 reg);
+float voltage_read(uint32 address, uint8 reg);
+
+float line_frequency_read(uint32 address, uint8 reg);
+
+uint16 x_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
+
+uint16 y_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
+
+uint16 z_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
 
 
 
