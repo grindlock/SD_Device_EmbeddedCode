@@ -107,7 +107,7 @@ uint16 x_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB){
     uint8 lsb = Read_sensor_byte(address, regLSB);
     uint8 msb = Read_sensor_byte(address, regMSB);
     
-    uint16 x = msb << 8 | (lsb & 0xf0);
+    uint16 x = (msb << 8) | (lsb & 0xf0);
     x = x >> 4;
     
     return x;
@@ -131,5 +131,11 @@ uint16 z_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB){
     z = z >> 4;
     
     return z;
+}
+
+uint16 gpio_expander_read(uint32 address, uint8 reg){
+    // i think to read a expecific pin i have to pass the 
+    uint16 read = Read_sensor_byte(address, reg);
+    return 0;
 }
 /* [] END OF FILE */

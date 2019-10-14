@@ -21,19 +21,25 @@
 #define ADDR_TEMP431 (0x4C)
 #define REG_LH_TMP431 (0x00) // Read High Byte of the local temperature
 #define REG_LL_TMP431 (0x15)//  Read low Byte of the local temperature
+#define REG_RH_TEMP431 (0x01) // Read High Byte of the remote temperature
+#define REG_RL_TEMP431 (x10)//   Read low Byte of the remote temperature
 #define REG_MANUF_ID431 (0xFE) // Read manufacture id = 0x55
 #define REG_TMP431ID    (0xFD) // Read the device ID = 0x31
 
 #define ADDR_TEMP432 (0x4D)
 #define REG_LH_TMP432 (0x00) // Read High Byte of the local temperature
 #define REG_LL_TMP432 (0x29)//  Read low Byte of the local temperature
+#define REG_RH1_TMP432 (0x01) // Read High Byte of the remote temperature 1
+#define REG_RL1_TMP432 (0x10)//   Read low Byte of the remote temperature 1
+#define REG_RH2_TMP432 (0x23) // Read High Byte of the remote temperature 2
+#define REG_RL2_TMP432 (0x24)//   Read low Byte of the remote temperature 2
 #define REG_MANUF_ID432 (0xFE) // Read manufacture id = 0x55
 #define REG_TMP432ID   (0xFD) // Read the device ID = 0x32
 
 // MCP39F521 datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20005442A.pdf (power monitoring)
-#define ADDR_POWER1 ()
-#define ADDR_POWER2 ()
-#define ADDR_POWER3 ()
+#define ADDR_POWER1 (0x74)
+#define ADDR_POWER2 (0x75)
+#define ADDR_POWER3 (0x76)
 #define REG_VOLTRMS (0x06)
 #define REG_CURRRMS (0x0E)
 #define REG_LINEFREQ (0x08)
@@ -50,6 +56,9 @@
 #define REG_ZLSB (0x06)
 #define REG_ZMSB (0x07)
 
+// PCA9538A datasheet  https://www.nxp.com/docs/en/data-sheet/PCA9538A.pdf
+#define ADDR_GPIO (0x70)
+#define REG_
 
 uint16 Read_sensor_word(uint32 address, uint8 reg);
 
@@ -74,6 +83,8 @@ uint16 x_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
 uint16 y_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
 
 uint16 z_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
+
+uint16 gpio_expander_read(uint32 address, uint8 reg);
 
 
 
