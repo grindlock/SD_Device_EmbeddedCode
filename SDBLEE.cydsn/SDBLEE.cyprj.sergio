@@ -872,16 +872,16 @@
 <name_val_pair name="SD_I2C.c" v="-mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\sergio\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p &quot;C:\Users\sergio\Documents\PSoC Creator\NewBLE_Test\SDBLEE.cydsn\SDBLEE.cyprj&quot; -d CY8C4247LQI-BL483 -s &quot;C:\Users\sergio\Documents\PSoC Creator\NewBLE_Test\SDBLEE.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\sergio\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p &quot;C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj&quot; -d CYBLE-012011-00 -s &quot;C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\Generated_Source\PSoC4&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
 </dataGuid>
 <dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
 <CyGuid_597c5b74-0c46-4204-8b7f-96f3570671dc type_name="CyDesigner.Common.ProjMgmt.DeviceSelector.CyDeviceSelectorState" version="1">
-<name_val_pair name="Dialog Bounds" v="564, 108, 800, 599" />
+<name_val_pair name="Dialog Bounds" v="374, 26, 903, 825" />
 <name_val_pair name="Column Order" v="PartNumber;CPU;Family;Series;PACKAGE;SPEED_MHZ;FLASH_KB;SRAM_KB;EEPROM_KB;IO_COUNT;CAPSENSE;INDSENSE;BLUETOOTH;DIRDRIVELCD;I2S;SMIF;TIMERCOUNTERPWM_COUNT;BT_COUNT;I2C_COUNT;UDB_COUNT;PRECONFIGURED_BLOCKS;USB_TYPE;CAN20B_COUNT;PVT_COMPLEX_ADC;DAC8_COUNT;DAC12_COUNT;SAMPLEHOLD_COUNT;OPAMP_COUNT;ANALOGBLOCKS_COUNT;ADCCHANNEL_COUNT;LPCOMP_COUNT;DFB_COUNT;DMACHANNELS_COUNT;DSTCCHANNELS_COUNT;PLL_COUNT;BOOSTCONVERTER_VOLTS;MFT_COUNT;MFS_COUNT;CRYPTO;POWER_MODES;PVT_DIGITAL_IN_VOLT_RANGE;PVT_ANALOG_IN_VOLT_RANGE;TEMPMIN_CELSIUS;TEMPMAX_CELSIUS;AUTOMOTIVE_QUALIFIED;TRACEBUFF_KB;SILICONID;DesignFits;" />
-<name_val_pair name="Filter Options" v="Series:PSoC 4200 BLE;" />
-<name_val_pair name="Visible Columns" v="PartNumber;CPU;Family;Series;PACKAGE;SPEED_MHZ;FLASH_KB;SRAM_KB;EEPROM_KB;IO_COUNT;CAPSENSE;INDSENSE;BLUETOOTH;DIRDRIVELCD;I2S;SMIF;TIMERCOUNTERPWM_COUNT;BT_COUNT;I2C_COUNT;UDB_COUNT;PRECONFIGURED_BLOCKS;USB_TYPE;CAN20B_COUNT;PVT_COMPLEX_ADC;DAC8_COUNT;DAC12_COUNT;SAMPLEHOLD_COUNT;OPAMP_COUNT;ANALOGBLOCKS_COUNT;ADCCHANNEL_COUNT;LPCOMP_COUNT;DFB_COUNT;DMACHANNELS_COUNT;DSTCCHANNELS_COUNT;PLL_COUNT;BOOSTCONVERTER_VOLTS;MFT_COUNT;MFS_COUNT;CRYPTO;POWER_MODES;PVT_DIGITAL_IN_VOLT_RANGE;PVT_ANALOG_IN_VOLT_RANGE;TEMPMIN_CELSIUS;TEMPMAX_CELSIUS;AUTOMOTIVE_QUALIFIED;TRACEBUFF_KB;SILICONID;" />
-<name_val_pair name="Sort" v="" />
+<name_val_pair name="Filter Options" v="BLUETOOTH:4.1,4.2;" />
+<name_val_pair name="Visible Columns" v="PartNumber;CPU;Series;PACKAGE;SPEED_MHZ;FLASH_KB;SRAM_KB;EEPROM_KB;IO_COUNT;CAPSENSE;INDSENSE;BLUETOOTH;DIRDRIVELCD;I2S;SMIF;TIMERCOUNTERPWM_COUNT;BT_COUNT;I2C_COUNT;UDB_COUNT;PRECONFIGURED_BLOCKS;USB_TYPE;CAN20B_COUNT;PVT_COMPLEX_ADC;DAC8_COUNT;DAC12_COUNT;SAMPLEHOLD_COUNT;OPAMP_COUNT;ANALOGBLOCKS_COUNT;ADCCHANNEL_COUNT;LPCOMP_COUNT;DFB_COUNT;DMACHANNELS_COUNT;DSTCCHANNELS_COUNT;PLL_COUNT;BOOSTCONVERTER_VOLTS;MFT_COUNT;MFS_COUNT;CRYPTO;POWER_MODES;PVT_DIGITAL_IN_VOLT_RANGE;PVT_ANALOG_IN_VOLT_RANGE;TEMPMIN_CELSIUS;TEMPMAX_CELSIUS;AUTOMOTIVE_QUALIFIED;TRACEBUFF_KB;SILICONID;" />
+<name_val_pair name="Sort" v="PVT_COMPLEX_ADC;Descending" />
 </CyGuid_597c5b74-0c46-4204-8b7f-96f3570671dc>
 </dataGuid>
 <dataGuid v="718b6b01-68ba-4a17-b632-d38dc61ebb3b">
@@ -1401,7 +1401,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="132148613603415705" />
+<deps_time v="132159882478715493" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />

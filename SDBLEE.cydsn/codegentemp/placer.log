@@ -6,7 +6,7 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
-#File Generated:     Oct 6 2019 14:49:12
+#File Generated:     Oct 19 2019 15:50:38
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name SDBLEE --netlist-vh2 SDBLEE_p.vh2 --arch p4_udb2x2 --arch-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_2x2_04.cydata --ip-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/128k/ip_blocks.cydata --rrg-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/128k/route_arch-rrg.cydata --irq-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/irqconn.cydata --dsi-conn-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/dsiconn.cydata --pins-file pins_56-QFN.xml --lib-file SDBLEE_p.lib --sdc-file SDBLEE.sdc --io-pcf SDBLEE.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjplacer.exe --proj-name SDBLEE --netlist-vh2 SDBLEE_p.vh2 --arch p4_udb2x2 --arch-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\arch/udbdsi_2x2_04.cydata --ip-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/128k/ip_blocks.cydata --rrg-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/128k/route_arch-rrg.cydata --irq-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/irqconn.cydata --dsi-conn-file C:\Users\sergio\Documents\PSoC Creator\4.2\Devices\psoc4/3/dsiconn.cydata --pins-file pins_31-SMT.xml --lib-file SDBLEE_p.lib --sdc-file SDBLEE.sdc --io-pcf SDBLEE.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -56,7 +56,7 @@ Design Statistics after Packing
 Device Utilization Summary after Packing
     Macrocells                  :	0/32
     UDBS                        :	0/4
-    IOs                         :	6/38
+    IOs                         :	6/35
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -79,7 +79,7 @@ Final Design Statistics
 
 Device Utilization Summary
     Macrocells                  :	0/32
-    IOs                         :	6/38
+    IOs                         :	6/35
 
 
 Phase 8
@@ -87,5 +87,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.6 sec.
+I2076: Total run-time: 0.8 sec.
 
