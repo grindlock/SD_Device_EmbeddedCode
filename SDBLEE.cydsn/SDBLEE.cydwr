@@ -20,6 +20,8 @@
       <Data key="3dbba19d-7851-4a83-b204-a0a386fe8d68/22863ebe-a37b-476f-b252-6e49a8c00b12" value="I2C_1_scl" />
       <Data key="6d272efb-051e-4c07-8a84-8515e3e86229" value="Blue" />
       <Data key="23e8c7d3-0eeb-4895-af3f-f64518093e22" value="Green" />
+      <Data key="2706a3ac-f7c5-4ef7-8628-fef90d78eb21" value="CE_Pin" />
+      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="volt" />
       <Data key="c3e03730-d268-4e4a-8975-9bf5c3e65558/52f31aa9-2f0a-497d-9a1f-1424095e13e6" value="UART_1_tx" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="Red" />
     </Group>
@@ -3629,9 +3631,19 @@
         <Data key="Port Format" value="3,7" />
       </Group>
     </Group>
+    <Group key="2706a3ac-f7c5-4ef7-8628-fef90d78eb21">
+      <Group key="0">
+        <Data key="Port Format" value="0,5" />
+      </Group>
+    </Group>
+    <Group key="77715107-f8d5-47e5-a629-0fb83101ac6b">
+      <Group key="0">
+        <Data key="Port Format" value="3,2" />
+      </Group>
+    </Group>
     <Group key="c3e03730-d268-4e4a-8975-9bf5c3e65558/52f31aa9-2f0a-497d-9a1f-1424095e13e6">
       <Group key="0">
-        <Data key="Port Format" value="2,7" />
+        <Data key="Port Format" value="1,0" />
       </Group>
     </Group>
     <Group key="e851a3b9-efb8-48be-bbb8-b303b216c393">

@@ -221,6 +221,8 @@ void check_sensors(){
     
 }
 
+
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -234,6 +236,8 @@ int main(void)
     I2C_1_Start();
     
     UART_1_Start();
+    
+    Volt_Regulator_Start(); // ADC at P3.2
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     srand(time(0));

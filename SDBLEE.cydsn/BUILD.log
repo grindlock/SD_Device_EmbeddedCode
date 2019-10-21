@@ -1,10 +1,9 @@
---------------- Build Started: 10/19/2019 15:49:59 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 10/21/2019 03:35:44 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 cydsfit.exe -.appdatapath "C:\Users\sergio\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj" -d CYBLE-012011-00 -s "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
 Synthesis...
 Tech Mapping...
-ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: \UART_1:tx(0)\
 Analog Placement...
 Analog Routing...
 Analog Code Generation...
@@ -28,7 +27,6 @@ In file included from main.c:20:0:
 SD_I2C.h:67:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
-The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
 main.c:203:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
@@ -50,6 +48,7 @@ In file included from main.c:20:0:
 SD_I2C.h:67:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
 main.c:209:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
@@ -92,4 +91,8 @@ In file included from main.c:20:0:
 SD_I2C.h:67:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
---------------- Build Failed: 10/19/2019 15:50:50 ---------------
+main.c: In function 'main':
+main.c:238:5: warning: implicit declaration of function 'Volt_regulator_Start' [-Wimplicit-function-declaration]
+     Volt_regulator_Start();
+     ^
+--------------- Build Failed: 10/21/2019 03:36:33 ---------------

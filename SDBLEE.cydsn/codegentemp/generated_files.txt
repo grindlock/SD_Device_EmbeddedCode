@@ -66,6 +66,18 @@
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_I2C_PVT.h" value="HEADER;;;;;I2C_1" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_PVT.h" value="HEADER;;;;;I2C_1" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_BOOT.h" value="HEADER;;;;;I2C_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\CE_Pin.c" value="SOURCE_C;CortexM0;;;;CE_Pin" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\CE_Pin.h" value="HEADER;;;;;CE_Pin" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\CE_Pin_aliases.h" value="HEADER;;;;;CE_Pin" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\CE_Pin_PM.c" value="SOURCE_C;CortexM0;;;;CE_Pin" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator.c" value="SOURCE_C;CortexM0;;;;Volt_Regulator" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator.h" value="HEADER;;;;;Volt_Regulator" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_PM.c" value="SOURCE_C;CortexM0;;;;Volt_Regulator" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_INT.c" value="SOURCE_C;CortexM0;;;;Volt_Regulator" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt.c" value="SOURCE_C;CortexM0;;;;volt" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt.h" value="HEADER;;;;;volt" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt_aliases.h" value="HEADER;;;;;volt" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt_PM.c" value="SOURCE_C;CortexM0;;;;volt" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\BLE_1_bless_isr.c" value="SOURCE_C;CortexM0;;;;BLE_1_bless_isr" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\BLE_1_bless_isr.h" value="HEADER;;;;;BLE_1_bless_isr" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_SCBCLK.c" value="SOURCE_C;CortexM0;;;;I2C_1_SCBCLK" />
@@ -80,6 +92,10 @@
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_scl_PM.c" value="SOURCE_C;CortexM0;;;;I2C_1_scl" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_SCB_IRQ.c" value="SOURCE_C;CortexM0;;;;I2C_1_SCB_IRQ" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_SCB_IRQ.h" value="HEADER;;;;;I2C_1_SCB_IRQ" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_IRQ.c" value="SOURCE_C;CortexM0;;;;Volt_Regulator_IRQ" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_IRQ.h" value="HEADER;;;;;Volt_Regulator_IRQ" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_intClock.c" value="SOURCE_C;CortexM0;;;;Volt_Regulator_intClock" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_intClock.h" value="HEADER;;;;;Volt_Regulator_intClock" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\cm0gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
