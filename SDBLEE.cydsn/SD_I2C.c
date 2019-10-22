@@ -138,4 +138,38 @@ uint16 gpio_expander_read(uint32 address, uint8 reg){
     uint16 read = Read_sensor_byte(address, reg);
     return 0;
 }
+
+int humidity_sensor_ID(){
+    
+    uint8 write_buff[2] ={REG_HUM_ID_0, REG_HUM_ID_1};
+    
+    volatile  uint8 read_buff1[4] = {0,0,0,0};
+    volatile  uint8 read_buff2[4] = {0,0,0,0};
+    
+    I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_0,REG_HUM_ID_1}, 2, I2C_1_I2C_MODE_NO_STOP);
+    while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_WR_CMPLT) == 0){}
+    
+     I2C_1_I2CMasterReadBuf(ADDR_HUMTEMP, (uint8 *) read_buff1, 4, I2C_1_I2C_MODE_REPEAT_START);
+    while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_RD_CMPLT) == 0){}
+    
+     I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_2,REG_HUM_ID_3}, 2, I2C_1_I2C_MODE_NO_STOP);
+    while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_WR_CMPLT) == 0){}
+    
+     I2C_1_I2CMasterReadBuf(ADDR_HUMTEMP, (uint8 *) read_buff2, 4, I2C_1_I2C_MODE_REPEAT_START);
+    while((I2C_1_I2CMasterStatus() & I2C_1_I2C_MSTAT_RD_CMPLT) == 0){}
+    
+    return  read_buff2[0] == 0x06? 1: 0;
+}
+
+int temperature_TI431_sensor_ID(){
+    return Read_sensor_word(ADDR_TEMP431, REG_TMP431ID) == 0x31? 1:0;
+}
+int temperature_TI432_sensor_ID(){
+    return Read_sensor_word(ADDR_TEMP432, REG_TMP432ID) == 0x32? 1:0;
+}
+
+int current_voltage_sensor_ID(uint32 address){
+    return Read_sensor_word(address,REG_POWER_VERSION) != 0x0000? 1 : 0;
+}
+
 /* [] END OF FILE */

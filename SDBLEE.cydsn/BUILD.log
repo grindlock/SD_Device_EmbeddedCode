@@ -1,98 +1,79 @@
---------------- Build Started: 10/21/2019 03:35:44 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-cydsfit.exe -.appdatapath "C:\Users\sergio\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj" -d CYBLE-012011-00 -s "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\Generated_Source\PSoC4" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
-Elaborating Design...
-HDL Generation...
-Synthesis...
-Tech Mapping...
-Analog Placement...
-Analog Routing...
-Analog Code Generation...
-Digital Placement...
-Digital Routing...
-Bitstream Generation...
-Bitstream Verification...
-Static timing analysis...
-API Generation...
-Dependency Generation...
-Cleanup...
+--------------- Build Started: 10/22/2019 19:07:49 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
 main.c: In function 'check_sensors':
-main.c:195:34: error: expected expression before ')' token
-     if(test_sensor(ADDR_HUMTEMP, )==0){
-                                  ^
-main.c:201:13: error: too few arguments to function 'test_sensor'
-     else if(test_sensor()==0){
-             ^
-In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
- int test_sensor(uint32 address, uint8 reg);
-     ^
-main.c:203:13: error: too few arguments to function 'test_sensor'
-     else if(test_sensor()==0){
-             ^
-In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
- int test_sensor(uint32 address, uint8 reg);
-     ^
-main.c:205:13: error: too few arguments to function 'test_sensor'
-     else if(test_sensor()==0){
-             ^
-In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
- int test_sensor(uint32 address, uint8 reg);
-     ^
+main.c:201:8: warning: implicit declaration of function 'Humidity_sensor_ID' [-Wimplicit-function-declaration]
+     if(Humidity_sensor_ID() == 0){
+        ^
 main.c:207:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
-The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
 main.c:209:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
 main.c:211:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
 main.c:213:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
 main.c:215:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
 main.c:217:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
 main.c:219:13: error: too few arguments to function 'test_sensor'
      else if(test_sensor()==0){
              ^
 In file included from main.c:20:0:
-SD_I2C.h:67:5: note: declared here
+SD_I2C.h:73:5: note: declared here
  int test_sensor(uint32 address, uint8 reg);
      ^
-main.c: In function 'main':
-main.c:238:5: warning: implicit declaration of function 'Volt_regulator_Start' [-Wimplicit-function-declaration]
-     Volt_regulator_Start();
+main.c:221:13: error: too few arguments to function 'test_sensor'
+     else if(test_sensor()==0){
+             ^
+In file included from main.c:20:0:
+SD_I2C.h:73:5: note: declared here
+ int test_sensor(uint32 address, uint8 reg);
      ^
---------------- Build Failed: 10/21/2019 03:36:33 ---------------
+main.c:223:13: error: too few arguments to function 'test_sensor'
+     else if(test_sensor()==0){
+             ^
+In file included from main.c:20:0:
+SD_I2C.h:73:5: note: declared here
+ int test_sensor(uint32 address, uint8 reg);
+     ^
+main.c:225:13: error: too few arguments to function 'test_sensor'
+     else if(test_sensor()==0){
+             ^
+In file included from main.c:20:0:
+SD_I2C.h:73:5: note: declared here
+ int test_sensor(uint32 address, uint8 reg);
+     ^
+--------------- Build Failed: 10/22/2019 19:07:49 ---------------

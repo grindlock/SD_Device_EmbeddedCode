@@ -9,14 +9,20 @@
  *
  * ========================================
 */
-
+#if !defined(SD_I2C_H)
+#define SD_I2C_H
+    
 #include "project.h"
 
 // Si7006-A20 datasheet  https://www.silabs.com/documents/public/data-sheets/Si7006-A20.pdf (humidity)
 #define ADDR_HUMTEMP      (0x40) // I2C address pag. 18
 #define REG_HUMSENSOR_HUM (0xE5) // Read humidity register hold master mode pag. 18
 #define REG_HUMSENSOR_TEM (0xE3) // Get temperature from the humidity reading pag. 18
-
+#define REG_HUM_ID_0 (0xFA)
+#define REG_HUM_ID_1 (0x0F) 
+#define REG_HUM_ID_2 (0xFC) 
+#define REG_HUM_ID_3 (0xC9) 
+    
 // TMP431 and TMP432 datasheet http://www.ti.com/lit/ds/symlink/tmp432.pdf (temperature)
 #define ADDR_TEMP431 (0x4C)
 #define REG_LH_TMP431 (0x00) // Read High Byte of the local temperature
@@ -44,7 +50,7 @@
 #define REG_CURRRMS (0x0E)
 #define REG_LINEFREQ (0x08)
 #define REG_POWER_STATUS (0x02)
-#define REG_POWER_VER (0x04)
+#define REG_POWER_VERSION (0x04)
 
 // BMA253 datasheet https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA253-DS000.pdf (accelerometer)
 #define ADDR_ACC (0x18)
@@ -86,7 +92,12 @@ uint16 z_accelerometer_read(uint32 address, uint8 regLSB, uint8 regMSB);
 
 uint16 gpio_expander_read(uint32 address, uint8 reg);
 
+int humidity_sensor_ID();
+int temperature_TI431_sensor_ID();
+int temperature_TI432_sensor_ID();
+int current_voltage_sensor_ID(uint32 address);
 
 
 
+#endif
 /* [] END OF FILE */

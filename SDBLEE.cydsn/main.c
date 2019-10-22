@@ -28,7 +28,6 @@ CYBLE_GATT_HANDLE_VALUE_PAIR_T thermoHandle;
 uint8 collectedData[4];
 uint8 isNotify = 0;
 uint8 updateIsNotifyCCCDAttr = 0;
-
 uint8 bleConnected = 0;
 
 uint8 thermostat[4] = {1,1};
@@ -40,24 +39,31 @@ struct errorCode{
 
 struct dataCollected {
     
-    float localTemp;
-    float remoteTemp1;
-    float remoteTemp2; 
-    float remoteTemp3;
-    float voltCompressor;
-    float voltFan;
-    float volt;
-    float currentCompressor;
-    float currentFan; 
-    float current;
-    float lineFreqComp;
-    float lineFreqFan;
-    float linFreq;
-    float airFlow;
+    uint16 localTemp;
+    uint16 remoteTemp1;
+    uint16 remoteTemp2; 
+    uint16 remoteTemp3;
+    uint16 voltCompressor;
+    uint16 voltFan;
+    uint16 volt;
+    uint16 currentCompressor;
+    uint16 currentFan; 
+    uint16 current;
+    uint16 lineFreqComp;
+    uint16 lineFreqFan;
+    uint16 linFreq;
+    uint16 airFlow;
     uint16 accX;
     uint16 accY;
     uint16 accZ;
     
+};
+
+struct thermostatData {
+    uint8 compressor;
+    uint8 lowFan;
+    uint8 highFan;
+    uint16 setTemperature;
 };
 
 void updateThermostatData(void){
@@ -192,7 +198,7 @@ void wdtSleepInt(){
 
 void check_sensors(){
     
-    if(test_sensor(ADDR_HUMTEMP, )==0){
+    if(Humidity_sensor_ID() == 0){
     }
     else if(test_sensor(ADDR_TEMP431, REG_MANUF_ID431)==0){
     }
