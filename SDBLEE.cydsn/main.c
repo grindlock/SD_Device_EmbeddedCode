@@ -31,18 +31,28 @@ uint8 updateIsNotifyCCCDAttr = 0;
 uint8 bleConnected = 0;
 
 uint8 thermostat[4] = {1,1};
+uint16 voltFromPin8; 
+uint8 adcVoltConverted;
 
-struct errorCode{
+// 4 bytes
+typedef struct{
+    int8 err_Power;
+    int8 err_Temp;
+    int8 err_Hum;
+    int8 err_Acc;
     
-    
-};
+}errorCode;
 
-struct dataCollected {
+errorCode error;
+
+// 36 bytes
+typedef struct{
     
-    uint16 localTemp;
-    uint16 remoteTemp1;
-    uint16 remoteTemp2; 
-    uint16 remoteTemp3;
+    int16 localTemp;
+    int16 remoteTemp1;
+    int16 remoteTemp2; 
+    int16 remoteTemp3;
+    uint16 humidity;
     uint16 voltCompressor;
     uint16 voltFan;
     uint16 volt;
@@ -57,14 +67,18 @@ struct dataCollected {
     uint16 accY;
     uint16 accZ;
     
-};
+}dataCollected;
 
-struct thermostatData {
+dataCollected sensorData;
+// 5 bytes
+typedef struct{
     uint8 compressor;
     uint8 lowFan;
     uint8 highFan;
     uint16 setTemperature;
-};
+} thermostatData ;
+
+thermostatData thermo;
 
 void updateThermostatData(void){
     
@@ -119,7 +133,7 @@ void bleStack(uint32 event, void *eventParam){
             wrReq = *(CYBLE_GATTS_WRITE_REQ_PARAM_T *)eventParam; //CYBLE_DAC_SERVICE_VOLT_VOLTCCCD_DESC_HANDLE
            
             // This handle the notofications
-            if(wrReq.handleValPair.attrHandle == CYBLE_RVAC_SENSOR_SENSORCCCD_DESC_HANDLE){
+            if(wrReq.handleValPair.attrHandle == CYBLE_RVAC_SENSORS_SENSORCCCD_DESC_HANDLE){
                 
                // CyBle_GattsWriteAttributeValue( &wrReq->handleValPair, 0, &connHandle, CYBLE_GATT_DB_LOCALLY_INITIATED);
                 isNotify = wrReq.handleValPair.value.val[0];//CYBLE_RVAC_SENSOR_SENSORCCCD_DESC_INDEX];
@@ -147,12 +161,12 @@ void bleStack(uint32 event, void *eventParam){
     
 }
 
-void SendDataNotify(uint8 *data, uint8 len){
+void SendDataNotify( uint8 len){
     CYBLE_GATTS_HANDLE_VALUE_NTF_T notiHandle;
     
 
-     notiHandle.attrHandle = CYBLE_RVAC_SENSOR_CHAR_HANDLE;
-     notiHandle.value.val = data;
+     notiHandle.attrHandle = CYBLE_RVAC_SENSORS_CHAR_HANDLE;
+     notiHandle.value.val = (uint8 *)&sensorData;
      notiHandle.value.len = len;
         
         CyBle_GattsNotification(cyBle_connHandle, &notiHandle);
@@ -170,7 +184,7 @@ void updateNotificationCCCD(void){
         sensorCCCDVal[0] = isNotify;
         sensorCCCDVal[1] = 0x00;
         
-        sensorNotCCCDHandle.attrHandle = CYBLE_RVAC_SENSOR_SENSORCCCD_DESC_HANDLE;
+        sensorNotCCCDHandle.attrHandle = CYBLE_RVAC_SENSORS_SENSORCCCD_DESC_HANDLE;
         sensorNotCCCDHandle.value.val = sensorCCCDVal;
         sensorNotCCCDHandle.value.len = 2;
         
@@ -197,72 +211,123 @@ void wdtSleepInt(){
 }
 
 void check_sensors(){
+    error.err_Power = 0;
+    error.err_Temp = 0;
+    error.err_Hum = 0;
+    error.err_Acc = 0;
     
-    if(Humidity_sensor_ID() == 0){
+    if(!humidity_sensor_ID()){
+        error.err_Hum = 1;
     }
-    else if(test_sensor(ADDR_TEMP431, REG_MANUF_ID431)==0){
+    else if(!temperature_TI431_sensor_ID()){
+        error.err_Temp = 1;
     }
-    else if(test_sensor(ADDR_TEMP432, REG_MANUF_ID432)==0){
+    else if(!temperature_TI432_sensor_ID()){
+        error.err_Temp = 1;
     }
-    else if(test_sensor()==0){
+    else if(!current_voltage_sensor_ID(ADDR_POWER1)){
+        error.err_Power = 1;
     }
-    else if(test_sensor()==0){
+    else if(!current_voltage_sensor_ID(ADDR_POWER2)){
+        error.err_Power = 1;
     }
-    else if(test_sensor()==0){
+    else if(!current_voltage_sensor_ID(ADDR_POWER3)){
+        error.err_Power = 1;
     }
-    else if(test_sensor()==0){
-    }
-    else if(test_sensor()==0){
-    }
-    else if(test_sensor()==0){
-    }
-    else if(test_sensor()==0){
-    }
-    else if(test_sensor()==0){
-    }
-    else if(test_sensor()==0){
-    }
-    else if(test_sensor()==0){
+    else if (!accelerametor_sensor_ID()){
+        error.err_Acc = 1;
     }
     
 }
 
+//CY_ISR(Volt_Regulator_SAR_SEQ_ISR_LOC){
+//    
+//    uint32 intr_status;
+//    intr_status =  Volt_Regulator_SAR_INTR_REG;;
+//    
+//    // place code here
+//    
+//    Volt_Regulator_SAR_INTR_REG = intr_status;
+//    
+//    
+//}
 
+void read_i2c_sensors(){
+sensorData.humidity = humidity_read(ADDR_HUMTEMP, REG_HUMSENSOR_HUM);
+sensorData.localTemp = temperature_local_read(ADDR_TEMP431, REG_LH_TMP431);
+sensorData.remoteTemp1 = temperature_remote_read(ADDR_TEMP431, REG_RH_TEMP431);
+sensorData.remoteTemp2 = temperature_remote_read(ADDR_TEMP432, REG_RH1_TMP432);
+sensorData.remoteTemp3 = temperature_remote_read(ADDR_TEMP432, REG_RH2_TMP432);
+sensorData.currentCompressor = cucurrent_read(ADDR_POWER1, REG_CURRRMS);
+sensorData.currentFan = current_read(ADDR_POWER2, REG_CURRRMS);
+sensorData.current = current_read(ADDR_POWER3, REG_CURRRMS);
+sensorData.voltCompressor = voltage_read(ADDR_POWER1, REG_VOLTRMS);
+sensorData.voltFan = voltage_read(ADDR_POWER2, REG_VOLTRMS);
+sensorData.volt = voltage_read(ADDR_POWER3, REG_VOLTRMS);
+sensorData.lineFreqComp = line_frequency_read(ADDR_POWER1, REG_LINEFREQ);
+sensorData.lineFreqFan = line_frequency_read(ADDR_POWER2, REG_LINEFREQ);
+sensorData.linFreq = line_frequency_read(ADDR_POWER3, REG_LINEFREQ);
+sensorData.accX = x_accelerometer_read(ADDR_ACC, REG_XLSB, REG_XMSB);   
+sensorData.accZ = y_accelerometer_read(ADDR_ACC, REG_YLSB, REG_YMSB); 
+sensorData.accY = z_accelerometer_read(ADDR_ACC, REG_ZLSB, REG_ZMSB); 
+}
 
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-    isr_1_StartEx(wdtSleepInt);
+    isr_1_StartEx(wdtSleepInt); // sleep every second
     CySysWdtEnable(CY_SYS_WDT_COUNTER0);
     
     
     CyBle_Start(bleStack);
-    //isr_1_Start();
+
     
     I2C_1_Start();
     
     UART_1_Start();
     
     Volt_Regulator_Start(); // ADC at P3.2
+//    Volt_Regulator_SAR_SEQ_IRQ_Enable();
+//    Volt_Regulator_SAR(Volt_Regulator_SAR_SEQ_ISR_LOC);
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     srand(time(0));
+    
+    uint8 prevRead = 0;
+    
     for(;;)
     {
         Red_Write(1);
         //WDT_ISR_StartEx();
        
         /* Place your application code here. */
-        
-        
-        
         advPayload[16] = collectedData[0];
         advPayload[17] = collectedData[1];
         advPayload[18] = collectedData[2];
         advPayload[19] = collectedData[3];
         
         
+        voltFromPin8 = Volt_Regulator_GetResult16(0);
+        adcVoltConverted = Volt_Regulator_CountsTo_Volts(0,voltFromPin8)*10;
+        
+        //turn on or off the volt regulator
+        if(adcVoltConverted != prevRead){
+            prevRead = adcVoltConverted;
+            if( adcVoltConverted >= 7){
+                CE_Pin_Write(1);
+                check_sensors();
+               
+            }
+            else{
+                CE_Pin_Write(0);
+            }
+        }
+        
+        
+        
 
+        
+        ///BLE code
        if(bleConnected == 1){
 
         updateNotificationCCCD();
@@ -271,7 +336,7 @@ int main(void)
             Green_Write(1);
             if(CyBle_GattGetBusStatus() == CYBLE_STACK_STATE_FREE){
              Blue_Write(0);
-                SendDataNotify(collectedData, 4);
+                SendDataNotify(sizeof(sensorData));
                 Blue_Write(1);
            }
         }
@@ -281,8 +346,9 @@ int main(void)
     }else{ 
         Blue_Write(1);
         Green_Write(1);}
+    //END Ble code
         
-    //UART_1_PutChar(thermostat[0]);
+
 
         CyBle_GapUpdateAdvData(cyBle_discoveryModeInfo.advData, cyBle_discoveryModeInfo.scanRspData); //Update data in Advertisment Packet 
         CyBle_ProcessEvents();

@@ -1,4 +1,4 @@
-C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj|45776322-7bbc-4729-9bfc-9c18b6b0dd7a
+C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj|81985ffd-1405-4c2f-a211-cc4804647e47
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|6cc59682-841b-4a48-b981-49a66c9ec7f7
 C:\Users\sergio\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|9b1a4551-3a68-4acd-8d97-c099c63b27bf
 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c789e201-4e73-4025-89a7-28e9817e580b

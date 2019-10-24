@@ -96,8 +96,7 @@ int humidity_sensor_ID();
 int temperature_TI431_sensor_ID();
 int temperature_TI432_sensor_ID();
 int current_voltage_sensor_ID(uint32 address);
-
-
+int accelerametor_sensor_ID();
 
 #endif
 /* [] END OF FILE */

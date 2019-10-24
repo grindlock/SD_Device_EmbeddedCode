@@ -571,8 +571,8 @@
 #define I2C_1_SCB_IRQ__INTC_SET_EN_REG CYREG_CM0_ISER
 #define I2C_1_SCB_IRQ__INTC_SET_PD_REG CYREG_CM0_ISPR
 #define I2C_1_SCBCLK__CTRL_REGISTER CYREG_PERI_PCLK_CTL2
-#define I2C_1_SCBCLK__DIV_ID 0x00000041u
-#define I2C_1_SCBCLK__DIV_REGISTER CYREG_PERI_DIV_16_CTL1
+#define I2C_1_SCBCLK__DIV_ID 0x00000040u
+#define I2C_1_SCBCLK__DIV_REGISTER CYREG_PERI_DIV_16_CTL0
 #define I2C_1_SCBCLK__PA_DIV_ID 0x000000FFu
 #define I2C_1_scl__0__DR CYREG_GPIO_PRT5_DR
 #define I2C_1_scl__0__DR_CLR CYREG_GPIO_PRT5_DR_CLR
@@ -789,7 +789,7 @@
 #define UART_1_tx__SHIFT 0u
 
 /* Volt_Regulator */
-#define Volt_Regulator_cy_psoc4_sar__CLOCK_DIV_ID 0x00000040u
+#define Volt_Regulator_cy_psoc4_sar__CLOCK_DIV_ID 0x00000041u
 #define Volt_Regulator_cy_psoc4_sar__SAR_ANA_TRIM CYREG_SAR_ANA_TRIM
 #define Volt_Regulator_cy_psoc4_sar__SAR_AVG_STAT CYREG_SAR_AVG_STAT
 #define Volt_Regulator_cy_psoc4_sar__SAR_CHAN_CONFIG00 CYREG_SAR_CHAN_CONFIG0
@@ -875,8 +875,8 @@
 #define Volt_Regulator_cy_psoc4_sar__SAR_STATUS CYREG_SAR_STATUS
 #define Volt_Regulator_cy_psoc4_sar__SAR_WOUNDING CYREG_SAR_WOUNDING
 #define Volt_Regulator_intClock__CTRL_REGISTER CYREG_PERI_PCLK_CTL6
-#define Volt_Regulator_intClock__DIV_ID 0x00000040u
-#define Volt_Regulator_intClock__DIV_REGISTER CYREG_PERI_DIV_16_CTL0
+#define Volt_Regulator_intClock__DIV_ID 0x00000041u
+#define Volt_Regulator_intClock__DIV_REGISTER CYREG_PERI_DIV_16_CTL1
 #define Volt_Regulator_intClock__PA_DIV_ID 0x000000FFu
 #define Volt_Regulator_IRQ__INTC_CLR_EN_REG CYREG_CM0_ICER
 #define Volt_Regulator_IRQ__INTC_CLR_PD_REG CYREG_CM0_ICPR

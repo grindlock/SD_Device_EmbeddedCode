@@ -2,7 +2,7 @@
 --	Conversion of SDBLEE.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Oct 22 16:12:55 2019
+--	Thu Oct 24 12:33:28 2019
 --
 
 USE cypress.cypress.all;
@@ -1109,7 +1109,7 @@ CE_Pin:cy_psoc3_pins_v1_10
 		id=>"be95bb7f-15b9-48ef-86ce-8b330d08ee08/5c71752a-e182-47ca-942c-9cb20adbdf2f",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"625000000",
+		period=>"1000000000",
 		is_direct=>'0',
 		is_digital=>'0')
 	PORT MAP(clock_out=>\Volt_Regulator:Net_1845\,

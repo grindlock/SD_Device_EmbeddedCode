@@ -172,4 +172,8 @@ int current_voltage_sensor_ID(uint32 address){
     return Read_sensor_word(address,REG_POWER_VERSION) != 0x0000? 1 : 0;
 }
 
+int accelerametor_sensor_ID(){
+ return Read_sensor_byte(ADDR_ACC,REG_ACCID) == 0xFA? 1: 0;   
+}
+
 /* [] END OF FILE */

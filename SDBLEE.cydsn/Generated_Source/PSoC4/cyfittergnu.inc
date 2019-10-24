@@ -571,8 +571,8 @@
 .set I2C_1_SCB_IRQ__INTC_SET_EN_REG, CYREG_CM0_ISER
 .set I2C_1_SCB_IRQ__INTC_SET_PD_REG, CYREG_CM0_ISPR
 .set I2C_1_SCBCLK__CTRL_REGISTER, CYREG_PERI_PCLK_CTL2
-.set I2C_1_SCBCLK__DIV_ID, 0x00000041
-.set I2C_1_SCBCLK__DIV_REGISTER, CYREG_PERI_DIV_16_CTL1
+.set I2C_1_SCBCLK__DIV_ID, 0x00000040
+.set I2C_1_SCBCLK__DIV_REGISTER, CYREG_PERI_DIV_16_CTL0
 .set I2C_1_SCBCLK__PA_DIV_ID, 0x000000FF
 .set I2C_1_scl__0__DR, CYREG_GPIO_PRT5_DR
 .set I2C_1_scl__0__DR_CLR, CYREG_GPIO_PRT5_DR_CLR
@@ -789,7 +789,7 @@
 .set UART_1_tx__SHIFT, 0
 
 /* Volt_Regulator */
-.set Volt_Regulator_cy_psoc4_sar__CLOCK_DIV_ID, 0x00000040
+.set Volt_Regulator_cy_psoc4_sar__CLOCK_DIV_ID, 0x00000041
 .set Volt_Regulator_cy_psoc4_sar__SAR_ANA_TRIM, CYREG_SAR_ANA_TRIM
 .set Volt_Regulator_cy_psoc4_sar__SAR_AVG_STAT, CYREG_SAR_AVG_STAT
 .set Volt_Regulator_cy_psoc4_sar__SAR_CHAN_CONFIG00, CYREG_SAR_CHAN_CONFIG0
@@ -875,8 +875,8 @@
 .set Volt_Regulator_cy_psoc4_sar__SAR_STATUS, CYREG_SAR_STATUS
 .set Volt_Regulator_cy_psoc4_sar__SAR_WOUNDING, CYREG_SAR_WOUNDING
 .set Volt_Regulator_intClock__CTRL_REGISTER, CYREG_PERI_PCLK_CTL6
-.set Volt_Regulator_intClock__DIV_ID, 0x00000040
-.set Volt_Regulator_intClock__DIV_REGISTER, CYREG_PERI_DIV_16_CTL0
+.set Volt_Regulator_intClock__DIV_ID, 0x00000041
+.set Volt_Regulator_intClock__DIV_REGISTER, CYREG_PERI_DIV_16_CTL1
 .set Volt_Regulator_intClock__PA_DIV_ID, 0x000000FF
 .set Volt_Regulator_IRQ__INTC_CLR_EN_REG, CYREG_CM0_ICER
 .set Volt_Regulator_IRQ__INTC_CLR_PD_REG, CYREG_CM0_ICPR

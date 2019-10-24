@@ -1,5 +1,5 @@
 -- Project:   C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj
--- Generated: 10/22/2019 16:12:56
+-- Generated: 10/24/2019 12:33:31
 -- PSoC Creator  4.2
 
 ENTITY SDBLEE IS
@@ -388,8 +388,8 @@ BEGIN
             lfclk => ClockBlock_LFClk,
             wco => ClockBlock_WCO,
             dsi_in_0 => ClockBlock_Routed1,
-            ff_div_6 => \Volt_Regulator:Net_1845_ff6\,
             ff_div_1 => open,
+            ff_div_6 => \Volt_Regulator:Net_1845_ff6\,
             ff_div_2 => \I2C_1:Net_847_ff1\);
 
     \UART_1:tx\:logicalport

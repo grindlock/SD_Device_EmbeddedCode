@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
   29:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint16 I2C_1_mstrStatus;      /* Master Status byte  */
   30:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** volatile uint8  I2C_1_mstrControl;     /* Master Control byte */
   31:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 2
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 2
 
 
   32:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** /* Receive buffer variables */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
   86:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    the bus. The attempt has to be retried.
   87:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTR_NOT_READY - Master is not ready for to start
   88:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    transfer. A master still has not completed previous transaction or a
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 3
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 3
 
 
   89:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    slave operation is in progress (in multi-master-slave configuration).
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  143:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_mstrControl       = (uint8) mode;
  144:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  145:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         slaveAddress = I2C_1_GET_I2C_8BIT_ADDRESS(slaveAddress);
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 4
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 4
 
 
  146:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  200:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  function for constants.
  201:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
  202:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 5
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 5
 
 
  203:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_mstrStatus  - used to store current status of I2C Master.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  257:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  258:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_ClearMasterInterruptSource(I2C_1_INTR_MASTER_ALL);
  259:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_SetMasterInterruptMode    (I2C_1_I2C_INTR_MASTER_MASK);
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 6
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 6
 
 
  260:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  314:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
  315:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \param timeoutMs
  316:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Defines in milliseconds the time that this function can block for.
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 7
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 7
 
 
  317:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * If that time expires, the function returns. If a zero is passed,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  371:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  372:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             if(0u == bitRnW) /* Write direction */
  373:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             {
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 8
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 8
 
 
  374:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                 I2C_1_state = I2C_1_I2C_FSM_MSTR_WR_DATA;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  428:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
  429:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \return
  430:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * Error status.
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 9
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 9
 
 
  431:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * See I2C_1_I2CMasterSendStart() function for constants.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  485:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
  486:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  487:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     return(errStatus);
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 10
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 10
 
 
  488:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  542:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         while (0u == locStatus);
  543:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  544:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Handle completion event and convert to status */
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 11
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 11
 
 
  545:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         errStatus = I2C_1_I2CMasterHandleStatus(locStatus);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  599:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
  600:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         while (0u == locStatus);
  601:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 12
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 12
 
 
  602:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Handle completion event and convert to status */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  656:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  657:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     /* Check FSM state before read byte */
  658:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     if(I2C_1_CHECK_I2C_MASTER_ACTIVE)
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 13
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 13
 
 
  659:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  713:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2C_MSTAT_ERR_ARB_LOST or
  714:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  I2C_1_I2C_MSTAT_ERR_BUS_ERROR occurred while read transfer.
  715:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 14
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 14
 
 
  716:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** * \globalvars
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  770:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_mstrRdBufIndex = 0u;
  771:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_mstrStatus    &= (uint16) ~I2C_1_I2C_MSTAT_RD_CMPLT;
  772:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 15
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 15
 
 
  773:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_EnableInt();   /* Release lock */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  827:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    occurred during master transfer due to misplaced Start or Stop
  828:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    condition on the bus.
  829:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *  - I2C_1_I2C_MSTAT_ERR_ABORT_XFER - Error condition: Slave was
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 16
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 16
 
 
  830:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** *    addressed by another master while master performed the start condition
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  884:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  885:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_EnableInt();   /* Release lock */
  886:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 17
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 17
 
 
  887:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     return(status);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  941:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     if (timeout > 0u)
  942:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
  943:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         /* Refill timeout */
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 18
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 18
 
 
  944:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         timeout = I2C_1_I2C_PHASE_GEN_TIMEOUT;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  998:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                 (I2C_1_I2C_MASTER_CMD_M_NACK) : (0u);
  999:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
 1000:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_I2C_MASTER_CMD_REG = cmd;
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 19
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 19
 
 
 1001:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** #endif /* (I2C_1_CY_SCBIP_V1) */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
 1055:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
 1056:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         retStatus  = I2C_1_I2C_MASTER_TIMEOUT;
 1057:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         resetBlock = I2C_1_I2C_RESET_ERROR;
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 20
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 20
 
 
 1058:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
 1112:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                 I2C_1_state = (I2C_1_CHECK_I2C_FSM_RD) ?
 1113:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                           I2C_1_I2C_FSM_MSTR_RD_DATA : I2C_1_I2C_FSM_MSTR_WR_DATA;
 1114:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             }
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 21
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 21
 
 
 1115:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
   42              		.loc 1 1153 0
   43 000a 0120     		movs	r0, #1
   44              	.LVL2:
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 22
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 22
 
 
   45 000c FFF7FEFF 		bl	CyDelayUs
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
   87 0000 10B5     		push	{r4, lr}
   88              		.cfi_def_cfa_offset 8
   89              		.cfi_offset 4, -8
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 23
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 23
 
 
   90              		.cfi_offset 14, -4
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  133              		.loc 1 1077 0
  134 0036 0123     		movs	r3, #1
  135              	.L9:
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 24
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 24
 
 
  136              	.LVL13:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  180              	.L11:
 1112:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****                                           I2C_1_I2C_FSM_MSTR_RD_DATA : I2C_1_I2C_FSM_MSTR_WR_DATA;
  181              		.loc 1 1112 0 is_stmt 0 discriminator 4
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 25
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 25
 
 
  182 0070 104B     		ldr	r3, .L21+4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  224              	.LVL20:
  225              	.L6:
 1118:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     {
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 26
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 26
 
 
  226              		.loc 1 1118 0
@@ -1528,11 +1528,11 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  247              	.L22:
  248 00ae C046     		.align	2
  249              	.L21:
- 250 00b0 68002440 		.word	1076101224
+ 250 00b0 68002540 		.word	1076166760
  251 00b4 00000000 		.word	I2C_1_state
- 252 00b8 60002440 		.word	1076101216
+ 252 00b8 60002540 		.word	1076166752
  253 00bc 17030000 		.word	791
- 254 00c0 000F2440 		.word	1076104960
+ 254 00c0 000F2540 		.word	1076170496
  255              		.cfi_endproc
  256              	.LFE16:
  257              		.size	I2C_1_I2CMasterHandleStatus, .-I2C_1_I2CMasterHandleStatus
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  276              		.cfi_offset 14, -4
  277 0002 82B0     		sub	sp, sp, #8
  278              		.cfi_def_cfa_offset 24
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 27
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 27
 
 
  279 0004 0400     		movs	r4, r0
@@ -1573,7 +1573,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  287 0010 40D1     		bne	.L29
  351:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  288              		.loc 1 351 0
- 289 0012 0920     		movs	r0, #9
+ 289 0012 0A20     		movs	r0, #10
  290              	.LVL28:
  291 0014 FFF7FEFF 		bl	CyIntDisable
  292              	.LVL29:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  324 0040 002D     		cmp	r5, #0
  325 0042 03D1     		bne	.L26
  374:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             }
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 28
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 28
 
 
  326              		.loc 1 374 0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  373              	.LVL40:
  395:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  374              		.loc 1 395 0 discriminator 1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 29
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 29
 
 
  375 0080 EED0     		beq	.L28
@@ -1699,7 +1699,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  388              	.L25:
  401:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     }
  389              		.loc 1 401 0
- 390 008c 0920     		movs	r0, #9
+ 390 008c 0A20     		movs	r0, #10
  391 008e FFF7FEFF 		bl	CyIntEnable
  392              	.LVL45:
  393 0092 00E0     		b	.L24
@@ -1722,15 +1722,15 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  408              		.align	2
  409              	.L31:
  410 009c 00000000 		.word	I2C_1_state
- 411 00a0 64002440 		.word	1076101220
- 412 00a4 080F2440 		.word	1076104968
+ 411 00a0 64002540 		.word	1076166756
+ 412 00a4 080F2540 		.word	1076170504
  413 00a8 17030000 		.word	791
- 414 00ac 000F2440 		.word	1076104960
+ 414 00ac 000F2540 		.word	1076170496
  415 00b0 ED0F0000 		.word	4077
- 416 00b4 C00F2440 		.word	1076105152
- 417 00b8 40022440 		.word	1076101696
- 418 00bc 68002440 		.word	1076101224
- 419 00c0 400F2440 		.word	1076105024
+ 416 00b4 C00F2540 		.word	1076170688
+ 417 00b8 40022540 		.word	1076167232
+ 418 00bc 68002540 		.word	1076166760
+ 419 00c0 400F2540 		.word	1076170560
  420              		.cfi_endproc
  421              	.LFE4:
  422              		.size	I2C_1_I2CMasterSendStart, .-I2C_1_I2CMasterSendStart
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  424              		.align	2
  425              		.global	I2C_1_I2CMasterSendStop
  426              		.code	16
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 30
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 30
 
 
  427              		.thumb_func
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  475 0030 0400     		movs	r4, r0
  476              	.LVL53:
  540:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 31
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 31
 
 
  477              		.loc 1 540 0 discriminator 1
@@ -1833,9 +1833,9 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  502              		.align	2
  503              	.L39:
  504 0048 00000000 		.word	I2C_1_state
- 505 004c 64002440 		.word	1076101220
- 506 0050 68002440 		.word	1076101224
- 507 0054 000F2440 		.word	1076104960
+ 505 004c 64002540 		.word	1076166756
+ 506 0050 68002540 		.word	1076166760
+ 507 0054 000F2540 		.word	1076170496
  508              		.cfi_endproc
  509              	.LFE6:
  510              		.size	I2C_1_I2CMasterSendStop, .-I2C_1_I2CMasterSendStop
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  526              		.cfi_offset 4, -8
  527              		.cfi_offset 14, -4
  528 0002 82B0     		sub	sp, sp, #8
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 32
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 32
 
 
  529              		.cfi_def_cfa_offset 16
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  575              	.L42:
  607:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  576              		.loc 1 607 0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 33
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 33
 
 
  577 0036 02B0     		add	sp, sp, #8
@@ -1928,8 +1928,8 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  581 003a C046     		.align	2
  582              	.L45:
  583 003c 00000000 		.word	I2C_1_state
- 584 0040 40022440 		.word	1076101696
- 585 0044 000F2440 		.word	1076104960
+ 584 0040 40022540 		.word	1076167232
+ 585 0044 000F2540 		.word	1076170496
  586              		.cfi_endproc
  587              	.LFE7:
  588              		.size	I2C_1_I2CMasterWriteByte, .-I2C_1_I2CMasterWriteByte
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  667:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             rxNotEmpty = I2C_1_GetRxInterruptSource() & I2C_1_INTR_RX_NOT_EMPTY;
  628              		.loc 1 667 0 discriminator 1
  629 0018 134B     		ldr	r3, .L53+4
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 34
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 34
 
 
  630 001a 1868     		ldr	r0, [r3]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  674              		.loc 1 687 0
  675 0056 0422     		movs	r2, #4
  676 0058 074B     		ldr	r3, .L53+20
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 35
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 35
 
 
  677 005a 1A60     		str	r2, [r3]
@@ -2062,11 +2062,11 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  693              		.align	2
  694              	.L53:
  695 0064 00000000 		.word	I2C_1_state
- 696 0068 000F2440 		.word	1076104960
- 697 006c C00F2440 		.word	1076105152
- 698 0070 40032440 		.word	1076101952
+ 696 0068 000F2540 		.word	1076170496
+ 697 006c C00F2540 		.word	1076170688
+ 698 0070 40032540 		.word	1076167488
  699 0074 ED0F0000 		.word	4077
- 700 0078 68002440 		.word	1076101224
+ 700 0078 68002540 		.word	1076166760
  701              		.cfi_endproc
  702              	.LFE8:
  703              		.size	I2C_1_I2CMasterReadByte, .-I2C_1_I2CMasterReadByte
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  726 0008 00000000 		.word	I2C_1_mstrRdBufIndex
  727              		.cfi_endproc
  728              	.LFE9:
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 36
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 36
 
 
  729              		.size	I2C_1_I2CMasterGetReadBufSize, .-I2C_1_I2CMasterGetReadBufSize
@@ -2150,7 +2150,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  771              		.cfi_offset 14, -4
  768:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  772              		.loc 1 768 0
- 773 0002 0920     		movs	r0, #9
+ 773 0002 0A20     		movs	r0, #10
  774 0004 FFF7FEFF 		bl	CyIntDisable
  775              	.LVL85:
  770:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_mstrStatus    &= (uint16) ~I2C_1_I2C_MSTAT_RD_CMPLT;
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  777 0008 0022     		movs	r2, #0
  778 000a 054B     		ldr	r3, .L62
  779 000c 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 37
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 37
 
 
  771:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2170,7 +2170,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  785 0016 1380     		strh	r3, [r2]
  773:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** }
  786              		.loc 1 773 0
- 787 0018 0920     		movs	r0, #9
+ 787 0018 0A20     		movs	r0, #10
  788 001a FFF7FEFF 		bl	CyIntEnable
  789              	.LVL86:
  774:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2204,7 +2204,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  816              		.cfi_offset 14, -4
  791:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  817              		.loc 1 791 0
- 818 0002 0920     		movs	r0, #9
+ 818 0002 0A20     		movs	r0, #10
  819 0004 FFF7FEFF 		bl	CyIntDisable
  820              	.LVL87:
  793:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_mstrStatus    &= (uint16) ~I2C_1_I2C_MSTAT_WR_CMPLT;
@@ -2218,13 +2218,13 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  827 0010 1388     		ldrh	r3, [r2]
  828 0012 0221     		movs	r1, #2
  829 0014 8B43     		bics	r3, r1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 38
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 38
 
 
  830 0016 1380     		strh	r3, [r2]
  796:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** }
  831              		.loc 1 796 0
- 832 0018 0920     		movs	r0, #9
+ 832 0018 0A20     		movs	r0, #10
  833 001a FFF7FEFF 		bl	CyIntEnable
  834              	.LVL88:
  797:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2258,7 +2258,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  861              		.cfi_offset 14, -4
  845:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  862              		.loc 1 845 0
- 863 0002 0920     		movs	r0, #9
+ 863 0002 0A20     		movs	r0, #10
  864 0004 FFF7FEFF 		bl	CyIntDisable
  865              	.LVL89:
  847:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  877              		.loc 1 852 0
  878 0018 0423     		movs	r3, #4
  879 001a 1A43     		orrs	r2, r3
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 39
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 39
 
 
  880              	.LVL91:
@@ -2287,7 +2287,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  883              	.L68:
  855:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  884              		.loc 1 855 0
- 885 001e 0920     		movs	r0, #9
+ 885 001e 0A20     		movs	r0, #10
  886 0020 FFF7FEFF 		bl	CyIntEnable
  887              	.LVL93:
  858:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2323,7 +2323,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  916              		.cfi_offset 14, -4
  879:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  917              		.loc 1 879 0
- 918 0002 0920     		movs	r0, #9
+ 918 0002 0A20     		movs	r0, #10
  919 0004 FFF7FEFF 		bl	CyIntDisable
  920              	.LVL95:
  882:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****     I2C_1_mstrStatus = I2C_1_I2C_MSTAT_CLEAR;
@@ -2338,10 +2338,10 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  928 0010 1A80     		strh	r2, [r3]
  885:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  929              		.loc 1 885 0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 40
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 40
 
 
- 930 0012 0920     		movs	r0, #9
+ 930 0012 0A20     		movs	r0, #10
  931 0014 FFF7FEFF 		bl	CyIntEnable
  932              	.LVL97:
  888:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2398,12 +2398,12 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  977 0014 7047     		bx	lr
  978              	.L77:
  979 0016 C046     		.align	2
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 41
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 41
 
 
  980              	.L76:
- 981 0018 64002440 		.word	1076101220
- 982 001c 68002440 		.word	1076101224
+ 981 0018 64002540 		.word	1076166756
+ 982 001c 68002540 		.word	1076166760
  983              		.cfi_endproc
  984              	.LFE15:
  985              		.size	I2C_1_I2CReStartGeneration, .-I2C_1_I2CReStartGeneration
@@ -2448,7 +2448,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1021 0016 08D1     		bne	.L80
  114:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  1022              		.loc 1 114 0
- 1023 0018 0920     		movs	r0, #9
+ 1023 0018 0A20     		movs	r0, #10
  1024              	.LVL104:
  1025 001a FFF7FEFF 		bl	CyIntDisable
  1026              	.LVL105:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1029 0020 1B68     		ldr	r3, [r3]
  1030 0022 DB07     		lsls	r3, r3, #31
  1031 0024 0ED5     		bpl	.L84
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 42
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 42
 
 
  1032 0026 0826     		movs	r6, #8
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1077 0054 0023     		movs	r3, #0
  1078 0056 1C4A     		ldr	r2, .L86+12
  1079 0058 1360     		str	r3, [r2]
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 43
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 43
 
 
  140:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_mstrWrBufSize     = cnt;
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1123              		.loc 1 159 0
  1124 0096 EB07     		lsls	r3, r5, #31
  1125 0098 04D5     		bpl	.L82
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 44
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 44
 
 
  161:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****             I2C_1_TX_FIFO_WR_REG = slaveAddress;
@@ -2604,7 +2604,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1142              	.L81:
  171:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  1143              		.loc 1 171 0
- 1144 00ae 0920     		movs	r0, #9
+ 1144 00ae 0A20     		movs	r0, #10
  1145 00b0 FFF7FEFF 		bl	CyIntEnable
  1146              	.LVL119:
  174:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2620,25 +2620,25 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1156 00ba C046     		.align	2
  1157              	.L86:
  1158 00bc 00000000 		.word	I2C_1_state
- 1159 00c0 64002440 		.word	1076101220
+ 1159 00c0 64002540 		.word	1076166756
  1160 00c4 00000000 		.word	I2C_1_mstrStatus
  1161 00c8 00000000 		.word	I2C_1_mstrWrBufIndexTmp
  1162 00cc 00000000 		.word	I2C_1_mstrWrBufIndex
  1163 00d0 00000000 		.word	I2C_1_mstrWrBufSize
  1164 00d4 00000000 		.word	I2C_1_mstrWrBufPtr
  1165 00d8 00000000 		.word	I2C_1_mstrControl
- 1166 00dc 800F2440 		.word	1076105088
+ 1166 00dc 800F2540 		.word	1076170624
  1167 00e0 17030000 		.word	791
- 1168 00e4 000F2440 		.word	1076104960
- 1169 00e8 080F2440 		.word	1076104968
- 1170 00ec 880F2440 		.word	1076105096
- 1171 00f0 40022440 		.word	1076101696
- 1172 00f4 68002440 		.word	1076101224
+ 1168 00e4 000F2540 		.word	1076170496
+ 1169 00e8 080F2540 		.word	1076170504
+ 1170 00ec 880F2540 		.word	1076170632
+ 1171 00f0 40022540 		.word	1076167232
+ 1172 00f4 68002540 		.word	1076166760
  1173              		.cfi_endproc
  1174              	.LFE2:
  1175              		.size	I2C_1_I2CMasterWriteBuf, .-I2C_1_I2CMasterWriteBuf
  1176              		.section	.text.I2C_1_I2CMasterReadBuf,"ax",%progbits
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 45
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 45
 
 
  1177              		.align	2
@@ -2681,7 +2681,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1211 0016 08D1     		bne	.L90
  224:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  1212              		.loc 1 224 0
- 1213 0018 0920     		movs	r0, #9
+ 1213 0018 0A20     		movs	r0, #10
  1214              	.LVL126:
  1215 001a FFF7FEFF 		bl	CyIntDisable
  1216              	.LVL127:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  230:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         {
  1226              		.loc 1 230 0
  1227 002a 294B     		ldr	r3, .L98
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 46
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 46
 
 
  1228 002c 1B78     		ldrb	r3, [r3]
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  251:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         I2C_1_mstrControl    = (uint8) mode;
  1273              		.loc 1 251 0
  1274 005e 214B     		ldr	r3, .L98+20
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 47
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 47
 
 
  1275 0060 1C60     		str	r4, [r3]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  273:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c ****         }
  1321              		.loc 1 273 0
  1322 00a4 0822     		movs	r2, #8
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 48
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 48
 
 
  1323 00a6 144B     		ldr	r3, .L98+40
@@ -2851,7 +2851,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1345              	.L91:
  289:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  1346              		.loc 1 289 0
- 1347 00c2 0920     		movs	r0, #9
+ 1347 00c2 0A20     		movs	r0, #10
  1348 00c4 FFF7FEFF 		bl	CyIntEnable
  1349              	.LVL141:
  292:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
@@ -2867,22 +2867,22 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1359 00ce C046     		.align	2
  1360              	.L98:
  1361 00d0 00000000 		.word	I2C_1_state
- 1362 00d4 64002440 		.word	1076101220
+ 1362 00d4 64002540 		.word	1076166756
  1363 00d8 00000000 		.word	I2C_1_mstrStatus
  1364 00dc 00000000 		.word	I2C_1_mstrRdBufIndex
  1365 00e0 00000000 		.word	I2C_1_mstrRdBufSize
  1366 00e4 00000000 		.word	I2C_1_mstrRdBufPtr
  1367 00e8 00000000 		.word	I2C_1_mstrControl
  1368 00ec 17030000 		.word	791
- 1369 00f0 000F2440 		.word	1076104960
- 1370 00f4 080F2440 		.word	1076104968
- 1371 00f8 C80F2440 		.word	1076105160
- 1372 00fc 60002440 		.word	1076101216
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 49
+ 1369 00f0 000F2540 		.word	1076170496
+ 1370 00f4 080F2540 		.word	1076170504
+ 1371 00f8 C80F2540 		.word	1076170696
+ 1372 00fc 60002540 		.word	1076166752
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 49
 
 
- 1373 0100 40022440 		.word	1076101696
- 1374 0104 68002440 		.word	1076101224
+ 1373 0100 40022540 		.word	1076167232
+ 1374 0104 68002540 		.word	1076166760
  1375              		.cfi_endproc
  1376              	.LFE3:
  1377              		.size	I2C_1_I2CMasterReadBuf, .-I2C_1_I2CMasterReadBuf
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1421 0020 0E4B     		ldr	r3, .L106
  1422 0022 1A70     		strb	r2, [r3]
  1423 0024 04E0     		b	.L103
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 50
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 50
 
 
  1424              	.L102:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1469              	.L101:
  488:Generated_Source\PSoC4/I2C_1_I2C_MASTER.c **** 
  1470              		.loc 1 488 0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 51
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 51
 
 
  1471 0056 02B0     		add	sp, sp, #8
@@ -3008,8 +3008,8 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1475 005a C046     		.align	2
  1476              	.L106:
  1477 005c 00000000 		.word	I2C_1_state
- 1478 0060 40022440 		.word	1076101696
- 1479 0064 000F2440 		.word	1076104960
+ 1478 0060 40022540 		.word	1076167232
+ 1479 0064 000F2540 		.word	1076170496
  1480              		.cfi_endproc
  1481              	.LFE5:
  1482              		.size	I2C_1_I2CMasterSendRestart, .-I2C_1_I2CMasterSendRestart
@@ -3037,7 +3037,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1504 000c 43000000 		.4byte	.LASF65
  1505 0010 0C       		.byte	0xc
  1506 0011 4C030000 		.4byte	.LASF66
- 1507 0015 74040000 		.4byte	.LASF67
+ 1507 0015 94030000 		.4byte	.LASF67
  1508 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1509 001d 00000000 		.4byte	0
  1510 0021 00000000 		.4byte	.Ldebug_line0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1525 003c 07       		.byte	0x7
  1526 003d FF010000 		.4byte	.LASF3
  1527 0041 02       		.uleb128 0x2
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 52
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 52
 
 
  1528 0042 04       		.byte	0x4
@@ -3110,7 +3110,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1574 009d 02       		.uleb128 0x2
  1575 009e 01       		.byte	0x1
  1576 009f 08       		.byte	0x8
- 1577 00a0 BD030000 		.4byte	.LASF14
+ 1577 00a0 08040000 		.4byte	.LASF14
  1578 00a4 05       		.uleb128 0x5
  1579 00a5 6B000000 		.4byte	0x6b
  1580 00a9 05       		.uleb128 0x5
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1582 00ae 04       		.uleb128 0x4
  1583 00af 34020000 		.4byte	.LASF15
  1584 00b3 02       		.byte	0x2
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 53
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 53
 
 
  1585 00b4 9002     		.2byte	0x290
@@ -3156,7 +3156,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1617 00ff 2A010000 		.4byte	0x12a
  1618 0103 01       		.byte	0x1
  1619 0104 09       		.uleb128 0x9
- 1620 0105 21040000 		.4byte	.LASF19
+ 1620 0105 6C040000 		.4byte	.LASF19
  1621 0109 01       		.byte	0x1
  1622 010a 7C04     		.2byte	0x47c
  1623 010c 83000000 		.4byte	0x83
@@ -3177,8 +3177,8 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1638 012a 0D       		.uleb128 0xd
  1639 012b 77000000 		.4byte	0x77
  1640 012f 06       		.uleb128 0x6
- 1641 0130 F4030000 		.4byte	.LASF21
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 54
+ 1641 0130 3F040000 		.4byte	.LASF21
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 54
 
 
  1642 0134 01       		.byte	0x1
@@ -3190,13 +3190,13 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1648 0144 9C       		.byte	0x9c
  1649 0145 83010000 		.4byte	0x183
  1650 0149 07       		.uleb128 0x7
- 1651 014a 21040000 		.4byte	.LASF19
+ 1651 014a 6C040000 		.4byte	.LASF19
  1652 014e 01       		.byte	0x1
  1653 014f 1904     		.2byte	0x419
  1654 0151 83000000 		.4byte	0x83
  1655 0155 61000000 		.4byte	.LLST2
  1656 0159 09       		.uleb128 0x9
- 1657 015a E2040000 		.4byte	.LASF23
+ 1657 015a ED040000 		.4byte	.LASF23
  1658 015e 01       		.byte	0x1
  1659 015f 1B04     		.2byte	0x41b
  1660 0161 83000000 		.4byte	0x83
@@ -3234,11 +3234,11 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1692 01b5 83000000 		.4byte	0x83
  1693 01b9 83010000 		.4byte	.LLST6
  1694 01bd 07       		.uleb128 0x7
- 1695 01be 10040000 		.4byte	.LASF27
+ 1695 01be 5B040000 		.4byte	.LASF27
  1696 01c2 01       		.byte	0x1
  1697 01c3 5901     		.2byte	0x159
  1698 01c5 83000000 		.4byte	0x83
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 55
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 55
 
 
  1699 01c9 C5010000 		.4byte	.LLST7
@@ -3253,7 +3253,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1708 01e2 6A000000 		.4byte	.LBE2-.LBB2
  1709 01e6 27020000 		.4byte	0x227
  1710 01ea 09       		.uleb128 0x9
- 1711 01eb AC030000 		.4byte	.LASF29
+ 1711 01eb F7030000 		.4byte	.LASF29
  1712 01ef 01       		.byte	0x1
  1713 01f0 6701     		.2byte	0x167
  1714 01f2 83000000 		.4byte	0x83
@@ -3289,7 +3289,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1744 0235 01       		.uleb128 0x1
  1745 0236 50       		.byte	0x50
  1746 0237 01       		.uleb128 0x1
- 1747 0238 39       		.byte	0x39
+ 1747 0238 3A       		.byte	0x3a
  1748 0239 00       		.byte	0
  1749 023a 0A       		.uleb128 0xa
  1750 023b 92000000 		.4byte	.LVL45
@@ -3298,10 +3298,10 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1753 0244 01       		.uleb128 0x1
  1754 0245 50       		.byte	0x50
  1755 0246 01       		.uleb128 0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 56
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 56
 
 
- 1756 0247 39       		.byte	0x39
+ 1756 0247 3A       		.byte	0x3a
  1757 0248 00       		.byte	0
  1758 0249 00       		.byte	0
  1759 024a 0F       		.uleb128 0xf
@@ -3315,7 +3315,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1767 025f 9C       		.byte	0x9c
  1768 0260 CB020000 		.4byte	0x2cb
  1769 0264 07       		.uleb128 0x7
- 1770 0265 10040000 		.4byte	.LASF27
+ 1770 0265 5B040000 		.4byte	.LASF27
  1771 0269 01       		.byte	0x1
  1772 026a 0B02     		.2byte	0x20b
  1773 026c 83000000 		.4byte	0x83
@@ -3330,7 +3330,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1782 0285 0C000000 		.4byte	.LBB3
  1783 0289 36000000 		.4byte	.LBE3-.LBB3
  1784 028d 09       		.uleb128 0x9
- 1785 028e AC030000 		.4byte	.LASF29
+ 1785 028e F7030000 		.4byte	.LASF29
  1786 0292 01       		.byte	0x1
  1787 0293 1202     		.2byte	0x212
  1788 0295 83000000 		.4byte	0x83
@@ -3358,12 +3358,12 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1810 02c1 40000000 		.4byte	.LVL57
  1811 02c5 2F010000 		.4byte	0x12f
  1812 02c9 00       		.byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 57
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 57
 
 
  1813 02ca 00       		.byte	0
  1814 02cb 0F       		.uleb128 0xf
- 1815 02cc 5B040000 		.4byte	.LASF32
+ 1815 02cc A6040000 		.4byte	.LASF32
  1816 02d0 01       		.byte	0x1
  1817 02d1 4602     		.2byte	0x246
  1818 02d3 83000000 		.4byte	0x83
@@ -3373,13 +3373,13 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1822 02e0 9C       		.byte	0x9c
  1823 02e1 5C030000 		.4byte	0x35c
  1824 02e5 07       		.uleb128 0x7
- 1825 02e6 B6030000 		.4byte	.LASF33
+ 1825 02e6 01040000 		.4byte	.LASF33
  1826 02ea 01       		.byte	0x1
  1827 02eb 4602     		.2byte	0x246
  1828 02ed 83000000 		.4byte	0x83
  1829 02f1 48030000 		.4byte	.LLST13
  1830 02f5 07       		.uleb128 0x7
- 1831 02f6 10040000 		.4byte	.LASF27
+ 1831 02f6 5B040000 		.4byte	.LASF27
  1832 02fa 01       		.byte	0x1
  1833 02fb 4602     		.2byte	0x246
  1834 02fd 83000000 		.4byte	0x83
@@ -3394,7 +3394,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1843 0316 0C000000 		.4byte	.LBB4
  1844 031a 28000000 		.4byte	.LBE4-.LBB4
  1845 031e 09       		.uleb128 0x9
- 1846 031f AC030000 		.4byte	.LASF29
+ 1846 031f F7030000 		.4byte	.LASF29
  1847 0323 01       		.byte	0x1
  1848 0324 4D02     		.2byte	0x24d
  1849 0326 83000000 		.4byte	0x83
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1867 034e 91       		.byte	0x91
  1868 034f 74       		.sleb128 -12
  1869 0350 00       		.byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 58
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 58
 
 
  1870 0351 0E       		.uleb128 0xe
@@ -3427,7 +3427,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1873 035a 00       		.byte	0
  1874 035b 00       		.byte	0
  1875 035c 0F       		.uleb128 0xf
- 1876 035d 94030000 		.4byte	.LASF34
+ 1876 035d DF030000 		.4byte	.LASF34
  1877 0361 01       		.byte	0x1
  1878 0362 8D02     		.2byte	0x28d
  1879 0364 83000000 		.4byte	0x83
@@ -3449,7 +3449,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1895 038e 0D040000 		.4byte	0x40d
  1896 0392 5D040000 		.4byte	.LLST18
  1897 0396 07       		.uleb128 0x7
- 1898 0397 10040000 		.4byte	.LASF27
+ 1898 0397 5B040000 		.4byte	.LASF27
  1899 039b 01       		.byte	0x1
  1900 039c 8D02     		.2byte	0x28d
  1901 039e 83000000 		.4byte	0x83
@@ -3464,7 +3464,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1910 03b7 10000000 		.4byte	.LBB5
  1911 03bb 4E000000 		.4byte	.LBE5-.LBB5
  1912 03bf 09       		.uleb128 0x9
- 1913 03c0 AC030000 		.4byte	.LASF29
+ 1913 03c0 F7030000 		.4byte	.LASF29
  1914 03c4 01       		.byte	0x1
  1915 03c5 9402     		.2byte	0x294
  1916 03c7 83000000 		.4byte	0x83
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1924 03df 11       		.uleb128 0x11
  1925 03e0 D5010000 		.4byte	.LASF22
  1926 03e4 01       		.byte	0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 59
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 59
 
 
  1927 03e5 9602     		.2byte	0x296
@@ -3515,7 +3515,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1958 0427 01       		.uleb128 0x1
  1959 0428 9C       		.byte	0x9c
  1960 0429 14       		.uleb128 0x14
- 1961 042a 28040000 		.4byte	.LASF39
+ 1961 042a 73040000 		.4byte	.LASF39
  1962 042e 01       		.byte	0x1
  1963 042f EC02     		.2byte	0x2ec
  1964 0431 83000000 		.4byte	0x83
@@ -3524,7 +3524,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1967 043d 01       		.uleb128 0x1
  1968 043e 9C       		.byte	0x9c
  1969 043f 15       		.uleb128 0x15
- 1970 0440 D8030000 		.4byte	.LASF40
+ 1970 0440 23040000 		.4byte	.LASF40
  1971 0444 01       		.byte	0x1
  1972 0445 FE02     		.2byte	0x2fe
  1973 0447 00000000 		.4byte	.LFB11
@@ -3538,12 +3538,12 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1981 045e 68040000 		.4byte	0x468
  1982 0462 0B       		.uleb128 0xb
  1983 0463 01       		.uleb128 0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 60
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 60
 
 
  1984 0464 50       		.byte	0x50
  1985 0465 01       		.uleb128 0x1
- 1986 0466 39       		.byte	0x39
+ 1986 0466 3A       		.byte	0x3a
  1987 0467 00       		.byte	0
  1988 0468 0A       		.uleb128 0xa
  1989 0469 1E000000 		.4byte	.LVL86
@@ -3552,7 +3552,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  1992 0472 01       		.uleb128 0x1
  1993 0473 50       		.byte	0x50
  1994 0474 01       		.uleb128 0x1
- 1995 0475 39       		.byte	0x39
+ 1995 0475 3A       		.byte	0x3a
  1996 0476 00       		.byte	0
  1997 0477 00       		.byte	0
  1998 0478 15       		.uleb128 0x15
@@ -3572,7 +3572,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2012 049c 01       		.uleb128 0x1
  2013 049d 50       		.byte	0x50
  2014 049e 01       		.uleb128 0x1
- 2015 049f 39       		.byte	0x39
+ 2015 049f 3A       		.byte	0x3a
  2016 04a0 00       		.byte	0
  2017 04a1 0A       		.uleb128 0xa
  2018 04a2 1E000000 		.4byte	.LVL88
@@ -3581,11 +3581,11 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2021 04ab 01       		.uleb128 0x1
  2022 04ac 50       		.byte	0x50
  2023 04ad 01       		.uleb128 0x1
- 2024 04ae 39       		.byte	0x39
+ 2024 04ae 3A       		.byte	0x3a
  2025 04af 00       		.byte	0
  2026 04b0 00       		.byte	0
  2027 04b1 0F       		.uleb128 0xf
- 2028 04b2 B4040000 		.4byte	.LASF42
+ 2028 04b2 BF040000 		.4byte	.LASF42
  2029 04b6 01       		.byte	0x1
  2030 04b7 4903     		.2byte	0x349
  2031 04b9 83000000 		.4byte	0x83
@@ -3595,10 +3595,10 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2035 04c6 9C       		.byte	0x9c
  2036 04c7 FE040000 		.4byte	0x4fe
  2037 04cb 09       		.uleb128 0x9
- 2038 04cc 21040000 		.4byte	.LASF19
+ 2038 04cc 6C040000 		.4byte	.LASF19
  2039 04d0 01       		.byte	0x1
  2040 04d1 4B03     		.2byte	0x34b
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 61
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 61
 
 
  2041 04d3 83000000 		.4byte	0x83
@@ -3611,7 +3611,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2048 04e9 01       		.uleb128 0x1
  2049 04ea 50       		.byte	0x50
  2050 04eb 01       		.uleb128 0x1
- 2051 04ec 39       		.byte	0x39
+ 2051 04ec 3A       		.byte	0x3a
  2052 04ed 00       		.byte	0
  2053 04ee 0A       		.uleb128 0xa
  2054 04ef 24000000 		.4byte	.LVL93
@@ -3620,7 +3620,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2057 04f8 01       		.uleb128 0x1
  2058 04f9 50       		.byte	0x50
  2059 04fa 01       		.uleb128 0x1
- 2060 04fb 39       		.byte	0x39
+ 2060 04fb 3A       		.byte	0x3a
  2061 04fc 00       		.byte	0
  2062 04fd 00       		.byte	0
  2063 04fe 0F       		.uleb128 0xf
@@ -3634,7 +3634,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2071 0513 9C       		.byte	0x9c
  2072 0514 4B050000 		.4byte	0x54b
  2073 0518 09       		.uleb128 0x9
- 2074 0519 21040000 		.4byte	.LASF19
+ 2074 0519 6C040000 		.4byte	.LASF19
  2075 051d 01       		.byte	0x1
  2076 051e 6D03     		.2byte	0x36d
  2077 0520 83000000 		.4byte	0x83
@@ -3647,7 +3647,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2084 0536 01       		.uleb128 0x1
  2085 0537 50       		.byte	0x50
  2086 0538 01       		.uleb128 0x1
- 2087 0539 39       		.byte	0x39
+ 2087 0539 3A       		.byte	0x3a
  2088 053a 00       		.byte	0
  2089 053b 0A       		.uleb128 0xa
  2090 053c 18000000 		.4byte	.LVL97
@@ -3656,9 +3656,9 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2093 0545 01       		.uleb128 0x1
  2094 0546 50       		.byte	0x50
  2095 0547 01       		.uleb128 0x1
- 2096 0548 39       		.byte	0x39
+ 2096 0548 3A       		.byte	0x3a
  2097 0549 00       		.byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 62
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 62
 
 
  2098 054a 00       		.byte	0
@@ -3695,7 +3695,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2129 0592 83000000 		.4byte	0x83
  2130 0596 B1050000 		.4byte	.LLST26
  2131 059a 18       		.uleb128 0x18
- 2132 059b 1A040000 		.4byte	.LASF46
+ 2132 059b 65040000 		.4byte	.LASF46
  2133 059f 01       		.byte	0x1
  2134 05a0 67       		.byte	0x67
  2135 05a1 0D040000 		.4byte	0x40d
@@ -3707,7 +3707,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2141 05b0 83000000 		.4byte	0x83
  2142 05b4 86060000 		.4byte	.LLST28
  2143 05b8 18       		.uleb128 0x18
- 2144 05b9 C2030000 		.4byte	.LASF47
+ 2144 05b9 0D040000 		.4byte	.LASF47
  2145 05bd 01       		.byte	0x1
  2146 05be 67       		.byte	0x67
  2147 05bf 83000000 		.4byte	0x83
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2152 05cd 69       		.byte	0x69
  2153 05ce 83000000 		.4byte	0x83
  2154 05d2 36070000 		.4byte	.LLST30
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 63
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 63
 
 
  2155 05d6 12       		.uleb128 0x12
@@ -3729,7 +3729,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2160 05e4 01       		.uleb128 0x1
  2161 05e5 50       		.byte	0x50
  2162 05e6 01       		.uleb128 0x1
- 2163 05e7 39       		.byte	0x39
+ 2163 05e7 3A       		.byte	0x3a
  2164 05e8 00       		.byte	0
  2165 05e9 0E       		.uleb128 0xe
  2166 05ea 9E000000 		.4byte	.LVL117
@@ -3741,7 +3741,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2172 05fc 01       		.uleb128 0x1
  2173 05fd 50       		.byte	0x50
  2174 05fe 01       		.uleb128 0x1
- 2175 05ff 39       		.byte	0x39
+ 2175 05ff 3A       		.byte	0x3a
  2176 0600 00       		.byte	0
  2177 0601 00       		.byte	0
  2178 0602 17       		.uleb128 0x17
@@ -3773,12 +3773,12 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2204 0640 83000000 		.4byte	0x83
  2205 0644 4D080000 		.4byte	.LLST33
  2206 0648 18       		.uleb128 0x18
- 2207 0649 C2030000 		.4byte	.LASF47
+ 2207 0649 0D040000 		.4byte	.LASF47
  2208 064d 01       		.byte	0x1
  2209 064e D5       		.byte	0xd5
  2210 064f 83000000 		.4byte	0x83
  2211 0653 BB080000 		.4byte	.LLST34
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 64
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 64
 
 
  2212 0657 1A       		.uleb128 0x1a
@@ -3795,7 +3795,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2223 0674 01       		.uleb128 0x1
  2224 0675 50       		.byte	0x50
  2225 0676 01       		.uleb128 0x1
- 2226 0677 39       		.byte	0x39
+ 2226 0677 3A       		.byte	0x3a
  2227 0678 00       		.byte	0
  2228 0679 0E       		.uleb128 0xe
  2229 067a B2000000 		.4byte	.LVL139
@@ -3807,7 +3807,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2235 068c 01       		.uleb128 0x1
  2236 068d 50       		.byte	0x50
  2237 068e 01       		.uleb128 0x1
- 2238 068f 39       		.byte	0x39
+ 2238 068f 3A       		.byte	0x3a
  2239 0690 00       		.byte	0
  2240 0691 00       		.byte	0
  2241 0692 0F       		.uleb128 0xf
@@ -3833,12 +3833,12 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2261 06c4 83000000 		.4byte	0x83
  2262 06c8 76090000 		.4byte	.LLST37
  2263 06cc 07       		.uleb128 0x7
- 2264 06cd 10040000 		.4byte	.LASF27
+ 2264 06cd 5B040000 		.4byte	.LASF27
  2265 06d1 01       		.byte	0x1
  2266 06d2 BC01     		.2byte	0x1bc
  2267 06d4 83000000 		.4byte	0x83
  2268 06d8 B0090000 		.4byte	.LLST38
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 65
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 65
 
 
  2269 06dc 09       		.uleb128 0x9
@@ -3851,7 +3851,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2276 06ed 0C000000 		.4byte	.LBB6
  2277 06f1 48000000 		.4byte	.LBE6-.LBB6
  2278 06f5 09       		.uleb128 0x9
- 2279 06f6 AC030000 		.4byte	.LASF29
+ 2279 06f6 F7030000 		.4byte	.LASF29
  2280 06fa 01       		.byte	0x1
  2281 06fb C301     		.2byte	0x1c3
  2282 06fd 83000000 		.4byte	0x83
@@ -3889,7 +3889,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2314 0742 1E       		.byte	0x1e
  2315 0743 A4000000 		.4byte	0xa4
  2316 0747 1C       		.uleb128 0x1c
- 2317 0748 C7030000 		.4byte	.LASF52
+ 2317 0748 12040000 		.4byte	.LASF52
  2318 074c 01       		.byte	0x1
  2319 074d 1D       		.byte	0x1d
  2320 074e A9000000 		.4byte	0xa9
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2323 0754 00000000 		.4byte	I2C_1_mstrStatus
  2324 0758 1C       		.uleb128 0x1c
  2325 0759 76030000 		.4byte	.LASF53
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 66
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 66
 
 
  2326 075d 01       		.byte	0x1
@@ -3919,7 +3919,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2341 077b 04       		.byte	0x4
  2342 077c A4000000 		.4byte	0xa4
  2343 0780 1C       		.uleb128 0x1c
- 2344 0781 47040000 		.4byte	.LASF55
+ 2344 0781 92040000 		.4byte	.LASF55
  2345 0785 01       		.byte	0x1
  2346 0786 22       		.byte	0x22
  2347 0787 BA000000 		.4byte	0xba
@@ -3958,11 +3958,11 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2380 07cf 05       		.uleb128 0x5
  2381 07d0 03       		.byte	0x3
  2382 07d1 00000000 		.4byte	I2C_1_mstrWrBufIndex
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 67
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 67
 
 
  2383 07d5 1C       		.uleb128 0x1c
- 2384 07d6 CA040000 		.4byte	.LASF60
+ 2384 07d6 D5040000 		.4byte	.LASF60
  2385 07da 01       		.byte	0x1
  2386 07db 29       		.byte	0x29
  2387 07dc BA000000 		.4byte	0xba
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2437 0017 0B       		.uleb128 0xb
  2438 0018 3E       		.uleb128 0x3e
  2439 0019 0B       		.uleb128 0xb
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 68
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 68
 
 
  2440 001a 03       		.uleb128 0x3
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2494 0050 9742     		.uleb128 0x2117
  2495 0052 19       		.uleb128 0x19
  2496 0053 01       		.uleb128 0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 69
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 69
 
 
  2497 0054 13       		.uleb128 0x13
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2551 008c 13       		.uleb128 0x13
  2552 008d 00       		.byte	0
  2553 008e 00       		.byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 70
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 70
 
 
  2554 008f 0B       		.uleb128 0xb
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2608 00ca 18       		.uleb128 0x18
  2609 00cb 9742     		.uleb128 0x2117
  2610 00cd 19       		.uleb128 0x19
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 71
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 71
 
 
  2611 00ce 01       		.uleb128 0x1
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2665 0106 19       		.uleb128 0x19
  2666 0107 03       		.uleb128 0x3
  2667 0108 0E       		.uleb128 0xe
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 72
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 72
 
 
  2668 0109 3A       		.uleb128 0x3a
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2722 0141 02       		.uleb128 0x2
  2723 0142 17       		.uleb128 0x17
  2724 0143 00       		.byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 73
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 73
 
 
  2725 0144 00       		.byte	0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2779 017b 02       		.uleb128 0x2
  2780 017c 17       		.uleb128 0x17
  2781 017d 00       		.byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 74
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 74
 
 
  2782 017e 00       		.byte	0
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2836 01b4 19       		.uleb128 0x19
  2837 01b5 3C       		.uleb128 0x3c
  2838 01b6 19       		.uleb128 0x19
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 75
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 75
 
 
  2839 01b7 6E       		.uleb128 0x6e
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2893 0069 0100     		.2byte	0x1
  2894 006b 50       		.byte	0x50
  2895 006c A1000000 		.4byte	.LVL21-1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 76
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 76
 
 
  2896 0070 A4000000 		.4byte	.LVL22
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  2950 00f1 00000000 		.4byte	0
  2951              	.LLST4:
  2952 00f5 02000000 		.4byte	.LVL9
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 77
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 77
 
 
  2953 00f9 38000000 		.4byte	.LVL13
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3007 0183 00000000 		.4byte	.LVL26
  3008 0187 17000000 		.4byte	.LVL29-1
  3009 018b 0100     		.2byte	0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 78
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 78
 
 
  3010 018d 51       		.byte	0x51
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3064 0211 C4000000 		.4byte	.LFE4
  3065 0215 0400     		.2byte	0x4
  3066 0217 F3       		.byte	0xf3
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 79
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 79
 
 
  3067 0218 01       		.uleb128 0x1
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3121 02a4 0100     		.2byte	0x1
  3122 02a6 50       		.byte	0x50
  3123 02a7 00000000 		.4byte	0
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 80
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 80
 
 
  3124 02ab 00000000 		.4byte	0
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3178 0332 0100     		.2byte	0x1
  3179 0334 54       		.byte	0x54
  3180 0335 3A000000 		.4byte	.LVL56
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 81
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 81
 
 
  3181 0339 3F000000 		.4byte	.LVL57-1
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3235 03b8 00000000 		.4byte	0
  3236              	.LLST15:
  3237 03bc 04000000 		.4byte	.LVL61
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 82
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 82
 
 
  3238 03c0 32000000 		.4byte	.LVL68
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3292 0451 F3       		.byte	0xf3
  3293 0452 01       		.uleb128 0x1
  3294 0453 50       		.byte	0x50
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 83
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 83
 
 
  3295 0454 9F       		.byte	0x9f
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3349              	.LLST20:
  3350 04d9 08000000 		.4byte	.LVL72
  3351 04dd 4E000000 		.4byte	.LVL80
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 84
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 84
 
 
  3352 04e1 0200     		.2byte	0x2
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3406 0570 00000000 		.4byte	0
  3407              	.LLST24:
  3408 0574 0E000000 		.4byte	.LVL96
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 85
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 85
 
 
  3409 0578 1A000000 		.4byte	.LVL98
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3463 0605 00000000 		.4byte	0
  3464              	.LLST27:
  3465 0609 00000000 		.4byte	.LVL101
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 86
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 86
 
 
  3466 060d 1D000000 		.4byte	.LVL105-1
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3520 069c 2A000000 		.4byte	.LVL106
  3521 06a0 34000000 		.4byte	.LVL107
  3522 06a4 0100     		.2byte	0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 87
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 87
 
 
  3523 06a6 52       		.byte	0x52
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3577 072e 00000000 		.4byte	0
  3578 0732 00000000 		.4byte	0
  3579              	.LLST30:
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 88
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 88
 
 
  3580 0736 0C000000 		.4byte	.LVL102
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3634 07c1 C2000000 		.4byte	.LVL140
  3635 07c5 0100     		.2byte	0x1
  3636 07c7 54       		.byte	0x54
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 89
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 89
 
 
  3637 07c8 00000000 		.4byte	0
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3691 0858 1D000000 		.4byte	.LVL127-1
  3692 085c 2A000000 		.4byte	.LVL128
  3693 0860 0100     		.2byte	0x1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 90
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 90
 
 
  3694 0862 57       		.byte	0x57
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3748 08f1 F3       		.byte	0xf3
  3749 08f2 01       		.uleb128 0x1
  3750 08f3 53       		.byte	0x53
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 91
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 91
 
 
  3751 08f4 9F       		.byte	0x9f
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3805 097e 0100     		.2byte	0x1
  3806 0980 51       		.byte	0x51
  3807 0981 33000000 		.4byte	.LVL151-1
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 92
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 92
 
 
  3808 0985 54000000 		.4byte	.LVL158
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3862 0a01 54000000 		.4byte	.LVL158
  3863 0a05 56000000 		.4byte	.LVL159
  3864 0a09 0200     		.2byte	0x2
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 93
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 93
 
 
  3865 0a0b 34       		.byte	0x34
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3919 006c 20000000 		.4byte	.LFE14-.LFB14
  3920 0070 00000000 		.4byte	.LFB15
  3921 0074 20000000 		.4byte	.LFE15-.LFB15
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 94
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 94
 
 
  3922 0078 00000000 		.4byte	.LFB2
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3970      74725772 
  3970      42756653 
  3970      697A6500 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 95
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 95
 
 
  3971              	.LASF10:
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  3994 0114 4932435F 		.ascii	"I2C_1_mstrWrBufIndex\000"
  3994      315F6D73 
  3994      74725772 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 96
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 96
 
 
  3994      42756649 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  4018      74725264 
  4018      42756649 
  4018      6E646578 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 97
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 97
 
 
  4019              	.LASF35:
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  4044      315F4932 
  4044      434D6173 
  4044      74657243 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 98
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 98
 
 
  4044      6C656172 
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  4065              	.LASF66:
  4066 034c 47656E65 		.ascii	"Generated_Source\\PSoC4\\I2C_1_I2C_MASTER.c\000"
  4066      72617465 
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 99
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 99
 
 
  4066      645F536F 
@@ -5894,99 +5894,99 @@ ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 1
  4070 0388 4932435F 		.ascii	"I2C_1_state\000"
  4070      315F7374 
  4070      61746500 
- 4071              	.LASF34:
- 4072 0394 4932435F 		.ascii	"I2C_1_I2CMasterReadByte\000"
- 4072      315F4932 
- 4072      434D6173 
- 4072      74657252 
- 4072      65616442 
- 4073              	.LASF29:
- 4074 03ac 6C6F6353 		.ascii	"locStatus\000"
- 4074      74617475 
- 4074      7300
- 4075              	.LASF33:
- 4076 03b6 77724279 		.ascii	"wrByte\000"
- 4076      746500
- 4077              	.LASF14:
- 4078 03bd 63686172 		.ascii	"char\000"
- 4078      00
- 4079              	.LASF47:
- 4080 03c2 6D6F6465 		.ascii	"mode\000"
- 4080      00
- 4081              	.LASF52:
- 4082 03c7 4932435F 		.ascii	"I2C_1_mstrStatus\000"
- 4082      315F6D73 
- 4082      74725374 
- 4082      61747573 
- 4082      00
- 4083              	.LASF40:
- 4084 03d8 4932435F 		.ascii	"I2C_1_I2CMasterClearReadBuf\000"
- 4084      315F4932 
- 4084      434D6173 
- 4084      74657243 
- 4084      6C656172 
- 4085              	.LASF21:
- 4086 03f4 4932435F 		.ascii	"I2C_1_I2CMasterHandleStatus\000"
- 4086      315F4932 
- 4086      434D6173 
- 4086      74657248 
- 4086      616E646C 
- 4087              	.LASF27:
- 4088 0410 74696D65 		.ascii	"timeoutMs\000"
- 4088      6F75744D 
- 4088      7300
- 4089              	.LASF46:
- 4090 041a 77724461 		.ascii	"wrData\000"
- 4090      746100
-ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc7o9Hoa.s 			page 100
+ 4071              	.LASF67:
+ 4072 0394 433A5C55 		.ascii	"C:\\Users\\sergio\\Documents\\PSoC Creator\\SD_Devi"
+ 4072      73657273 
+ 4072      5C736572 
+ 4072      67696F5C 
+ 4072      446F6375 
+ 4073 03c2 63655F45 		.ascii	"ce_EmbeddedCode\\SDBLEE.cydsn\000"
+ 4073      6D626564 
+ 4073      64656443 
+ 4073      6F64655C 
+ 4073      5344424C 
+ 4074              	.LASF34:
+ 4075 03df 4932435F 		.ascii	"I2C_1_I2CMasterReadByte\000"
+ 4075      315F4932 
+ 4075      434D6173 
+ 4075      74657252 
+ 4075      65616442 
+ 4076              	.LASF29:
+ 4077 03f7 6C6F6353 		.ascii	"locStatus\000"
+ 4077      74617475 
+ 4077      7300
+ 4078              	.LASF33:
+ 4079 0401 77724279 		.ascii	"wrByte\000"
+ 4079      746500
+ 4080              	.LASF14:
+ 4081 0408 63686172 		.ascii	"char\000"
+ 4081      00
+ 4082              	.LASF47:
+ 4083 040d 6D6F6465 		.ascii	"mode\000"
+ 4083      00
+ 4084              	.LASF52:
+ 4085 0412 4932435F 		.ascii	"I2C_1_mstrStatus\000"
+ 4085      315F6D73 
+ 4085      74725374 
+ 4085      61747573 
+ 4085      00
+ 4086              	.LASF40:
+ 4087 0423 4932435F 		.ascii	"I2C_1_I2CMasterClearReadBuf\000"
+ 4087      315F4932 
+ 4087      434D6173 
+ 4087      74657243 
+ 4087      6C656172 
+ 4088              	.LASF21:
+ 4089 043f 4932435F 		.ascii	"I2C_1_I2CMasterHandleStatus\000"
+ARM GAS  C:\Users\sergio\AppData\Local\Temp\cc2t0Rdn.s 			page 100
 
 
- 4091              	.LASF19:
- 4092 0421 73746174 		.ascii	"status\000"
- 4092      757300
- 4093              	.LASF39:
- 4094 0428 4932435F 		.ascii	"I2C_1_I2CMasterGetWriteBufSize\000"
- 4094      315F4932 
- 4094      434D6173 
- 4094      74657247 
- 4094      65745772 
- 4095              	.LASF55:
- 4096 0447 4932435F 		.ascii	"I2C_1_mstrRdBufSize\000"
- 4096      315F6D73 
- 4096      74725264 
- 4096      42756653 
- 4096      697A6500 
- 4097              	.LASF32:
- 4098 045b 4932435F 		.ascii	"I2C_1_I2CMasterWriteByte\000"
- 4098      315F4932 
- 4098      434D6173 
- 4098      74657257 
- 4098      72697465 
- 4099              	.LASF67:
- 4100 0474 433A5C55 		.ascii	"C:\\Users\\sergio\\Documents\\PSoC Creator\\NewBLE_"
- 4100      73657273 
- 4100      5C736572 
- 4100      67696F5C 
- 4100      446F6375 
- 4101 04a2 54657374 		.ascii	"Test\\SDBLEE.cydsn\000"
- 4101      5C534442 
- 4101      4C45452E 
- 4101      63796473 
- 4101      6E00
+ 4089      315F4932 
+ 4089      434D6173 
+ 4089      74657248 
+ 4089      616E646C 
+ 4090              	.LASF27:
+ 4091 045b 74696D65 		.ascii	"timeoutMs\000"
+ 4091      6F75744D 
+ 4091      7300
+ 4092              	.LASF46:
+ 4093 0465 77724461 		.ascii	"wrData\000"
+ 4093      746100
+ 4094              	.LASF19:
+ 4095 046c 73746174 		.ascii	"status\000"
+ 4095      757300
+ 4096              	.LASF39:
+ 4097 0473 4932435F 		.ascii	"I2C_1_I2CMasterGetWriteBufSize\000"
+ 4097      315F4932 
+ 4097      434D6173 
+ 4097      74657247 
+ 4097      65745772 
+ 4098              	.LASF55:
+ 4099 0492 4932435F 		.ascii	"I2C_1_mstrRdBufSize\000"
+ 4099      315F6D73 
+ 4099      74725264 
+ 4099      42756653 
+ 4099      697A6500 
+ 4100              	.LASF32:
+ 4101 04a6 4932435F 		.ascii	"I2C_1_I2CMasterWriteByte\000"
+ 4101      315F4932 
+ 4101      434D6173 
+ 4101      74657257 
+ 4101      72697465 
  4102              	.LASF42:
- 4103 04b4 4932435F 		.ascii	"I2C_1_I2CMasterStatus\000"
+ 4103 04bf 4932435F 		.ascii	"I2C_1_I2CMasterStatus\000"
  4103      315F4932 
  4103      434D6173 
  4103      74657253 
  4103      74617475 
  4104              	.LASF60:
- 4105 04ca 4932435F 		.ascii	"I2C_1_mstrWrBufIndexTmp\000"
+ 4105 04d5 4932435F 		.ascii	"I2C_1_mstrWrBufIndexTmp\000"
  4105      315F6D73 
  4105      74725772 
  4105      42756649 
  4105      6E646578 
  4106              	.LASF23:
- 4107 04e2 72657453 		.ascii	"retStatus\000"
+ 4107 04ed 72657453 		.ascii	"retStatus\000"
  4107      74617475 
  4107      7300
  4108              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

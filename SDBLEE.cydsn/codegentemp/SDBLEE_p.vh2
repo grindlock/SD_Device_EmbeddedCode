@@ -1,5 +1,5 @@
 -- Project:   SDBLEE
--- Generated: 10/22/2019 16:12:55
+-- Generated: 10/24/2019 12:33:29
 -- PSoC Creator  4.2
 
 ENTITY SDBLEE IS
@@ -380,8 +380,8 @@ BEGIN
             lfclk => ClockBlock_LFClk,
             wco => ClockBlock_WCO,
             dsi_in_0 => ClockBlock_Routed1,
-            ff_div_6 => \Volt_Regulator:Net_1845_ff6\,
-            ff_div_1 => \I2C_1:Net_847_ff1\);
+            ff_div_1 => \I2C_1:Net_847_ff1\,
+            ff_div_6 => \Volt_Regulator:Net_1845_ff6\);
 
     \UART_1:tx\:logicalport
         GENERIC MAP(

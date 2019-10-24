@@ -30,9 +30,9 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
         0x0010u, /* Handle of the RVAC service */ 
         {
 
-            /* sensor characteristic */
+            /* Sensors characteristic */
             {
-                0x0012u, /* Handle of the sensor characteristic */ 
+                0x0012u, /* Handle of the Sensors characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
@@ -50,6 +50,18 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 {
                     0x0018u, /* Handle of the thermoCCCD descriptor */ 
                     0x0019u, /* Handle of the thermoUserCCCD descriptor */ 
+                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                }, 
+            },
+
+            /* Error_Codes characteristic */
+            {
+                0x001Bu, /* Handle of the Error_Codes characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Cu, /* Handle of the errorCCCD descriptor */ 
+                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                     CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
                 }, 
             },
