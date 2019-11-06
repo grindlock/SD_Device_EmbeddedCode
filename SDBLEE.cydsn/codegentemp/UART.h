@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: UART_1.h
+* File Name: UART.h
 * Version 1.50
 *
 * Description:
@@ -13,35 +13,35 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#ifndef CY_SW_TX_UART_UART_1_H
-#define CY_SW_TX_UART_UART_1_H
+#ifndef CY_SW_TX_UART_UART_H
+#define CY_SW_TX_UART_UART_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
 #include "cypins.h"
 
-#define UART_1_BAUD_RATE                      (9600u)
-#define UART_1_PIN_STATIC_MODE                (1u)
+#define UART_BAUD_RATE                      (9600u)
+#define UART_PIN_STATIC_MODE                (1u)
 
 
 /***************************************
 *        Function Prototypes
 ***************************************/
-#if(UART_1_PIN_STATIC_MODE == 1u)
-    void UART_1_Start(void) ;
+#if(UART_PIN_STATIC_MODE == 1u)
+    void UART_Start(void) ;
 #else
-    void UART_1_StartEx(uint8 port, uint8 pin) ;
-#endif /* (UART_1_PIN_STATIC_MODE == 1u) */
+    void UART_StartEx(uint8 port, uint8 pin) ;
+#endif /* (UART_PIN_STATIC_MODE == 1u) */
 
-void UART_1_Stop(void) ;
-void UART_1_PutChar(uint8 txDataByte) ;
-void UART_1_PutString(const char8 string[]) ;
-void UART_1_PutArray(const uint8 array[], uint32 byteCount) ;
-void UART_1_PutHexByte(uint8 txHexByte) ;
-void UART_1_PutHexInt(uint16 txHexInt) ;
-void UART_1_PutCRLF(void) ;
+void UART_Stop(void) ;
+void UART_PutChar(uint8 txDataByte) ;
+void UART_PutString(const char8 string[]) ;
+void UART_PutArray(const uint8 array[], uint32 byteCount) ;
+void UART_PutHexByte(uint8 txHexByte) ;
+void UART_PutHexInt(uint16 txHexInt) ;
+void UART_PutCRLF(void) ;
 
-#endif /* CY_SW_TX_UART_UART_1_H */
+#endif /* CY_SW_TX_UART_UART_H */
 
 
 /* [] END OF FILE */

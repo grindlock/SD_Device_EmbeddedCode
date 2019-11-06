@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2019-10-24T16:33:31Z")
+ (DATE "2019-10-27T18:22:36Z")
  (DESIGN "SDBLEE")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -24,7 +24,7 @@
     (INTERCONNECT ClockBlock.ff_div_2 \\I2C_1\:SCB\\.clock (0.000:0.000:0.000))
     (INTERCONNECT ClockBlock.ff_div_6 \\Volt_Regulator\:cy_psoc4_sar\\.clock (0.000:0.000:0.000))
     (INTERCONNECT \\Volt_Regulator\:cy_psoc4_sar\\.irq \\Volt_Regulator\:IRQ\\.interrupt (1.000:1.000:1.000))
-    (INTERCONNECT \\UART_1\:tx\(0\)_PAD\\ \\UART_1\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT \\UART\:tx\(0\)_PAD\\ \\UART\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT Blue\(0\)_PAD Blue\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Red\(0\)_PAD Red\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Green\(0\)_PAD Green\(0\).pad_in (0.000:0.000:0.000))

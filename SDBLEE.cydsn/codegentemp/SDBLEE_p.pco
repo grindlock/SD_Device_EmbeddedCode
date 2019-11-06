@@ -23,7 +23,7 @@ set_location "\I2C_1:SCB_IRQ\" interrupt -1 -1 10
 set_location "\Volt_Regulator:IRQ\" interrupt -1 -1 15
 set_io "\I2C_1:sda(0)\" iocell 5 0
 set_location "ClockBlock" m0s8clockblockcell -1 -1 0
-set_io "\UART_1:tx(0)\" iocell 1 0
+set_io "\UART:tx(0)\" iocell 1 0
 set_io "Blue(0)" iocell 3 6
 set_io "Red(0)" iocell 4 0
 set_io "Green(0)" iocell 3 7

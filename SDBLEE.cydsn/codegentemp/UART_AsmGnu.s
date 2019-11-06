@@ -1,5 +1,5 @@
 /******************************************************************************
-* File Name: UART_1_AsmGnu.s
+* File Name: UART_AsmGnu.s
 * Version 1.50
 *
 *  Description:
@@ -13,8 +13,8 @@
 ******************************************************************************/
 
 
-.global UART_1_pinNumber
-.global UART_1_pinPortNumber
+.global UART_pinNumber
+.global UART_pinPortNumber
 .include "cyfittergnu.inc"
 
 
@@ -24,7 +24,7 @@
 
 
 /******************************************************************************
-* Function Name: UART_1_PutChar
+* Function Name: UART_PutChar
 *******************************************************************************
 *
 * Summary:
@@ -37,13 +37,13 @@
 *  None
 *
 ******************************************************************************/
-/* void UART_1_PutChar(uint8 txDataByte) */
+/* void UART_PutChar(uint8 txDataByte) */
 .align 5                     /* Align to 32 byte boundary (2^n) */
-.global UART_1_PutChar
-.func UART_1_PutChar, UART_1_PutChar
-.type UART_1_PutChar, %function
+.global UART_PutChar
+.func UART_PutChar, UART_PutChar
+.type UART_PutChar, %function
 .thumb_func
-UART_1_PutChar:
+UART_PutChar:
     PUSH {r1, r2, r3, r4, r5, r6, r7, lr}
     MOV r1, r9
     MOV r2, r10
@@ -142,11 +142,11 @@ bitTxLoop:
     POP {r1, r2, r3, r4, r5, r6, r7, pc}
     .align 5
 PIN_NUMBER:
-    .word UART_1_pinNumber
+    .word UART_pinNumber
 PORT_NUMBER:
-    .word UART_1_pinPortNumber
+    .word UART_pinPortNumber
 PORT_DR_ADDRESS:
-    .word UART_1_pinDrAdress
+    .word UART_pinDrAdress
 FREQ:
     .word cydelayFreqHz
 BAUD_RATE:

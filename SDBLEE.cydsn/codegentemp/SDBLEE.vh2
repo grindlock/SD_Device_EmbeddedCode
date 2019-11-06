@@ -2,7 +2,7 @@
 --	Conversion of SDBLEE.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Oct 24 12:33:28 2019
+--	Sun Oct 27 14:22:34 2019
 --
 
 USE cypress.cypress.all;
@@ -17,13 +17,13 @@ SIGNAL Net_6 : bit;
 SIGNAL \BLE_1:Net_53\ : bit;
 SIGNAL Net_5 : bit;
 SIGNAL \BLE_1:Net_55\ : bit;
-SIGNAL \UART_1:tmpOE__tx_net_0\ : bit;
+SIGNAL \UART:tmpOE__tx_net_0\ : bit;
 SIGNAL zero : bit;
-SIGNAL \UART_1:tmpFB_0__tx_net_0\ : bit;
-SIGNAL \UART_1:tmpIO_0__tx_net_0\ : bit;
-TERMINAL \UART_1:tmpSIOVREF__tx_net_0\ : bit;
+SIGNAL \UART:tmpFB_0__tx_net_0\ : bit;
+SIGNAL \UART:tmpIO_0__tx_net_0\ : bit;
+TERMINAL \UART:tmpSIOVREF__tx_net_0\ : bit;
 SIGNAL one : bit;
-SIGNAL \UART_1:tmpINTERRUPT_0__tx_net_0\ : bit;
+SIGNAL \UART:tmpINTERRUPT_0__tx_net_0\ : bit;
 SIGNAL Net_46 : bit;
 SIGNAL tmpOE__Blue_net_0 : bit;
 SIGNAL tmpFB_0__Blue_net_0 : bit;
@@ -238,7 +238,7 @@ one <=  ('1') ;
 		is_digital=>'0')
 	PORT MAP(clock_out=>\BLE_1:Net_53\,
 		dig_domain_out=>open);
-\UART_1:tx\:cy_psoc3_pins_v1_10
+\UART:tx\:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"c3e03730-d268-4e4a-8975-9bf5c3e65558/52f31aa9-2f0a-497d-9a1f-1424095e13e6",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -296,10 +296,10 @@ one <=  ('1') ;
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>(\UART_1:tmpFB_0__tx_net_0\),
+		fb=>(\UART:tmpFB_0__tx_net_0\),
 		analog=>(open),
-		io=>(\UART_1:tmpIO_0__tx_net_0\),
-		siovref=>(\UART_1:tmpSIOVREF__tx_net_0\),
+		io=>(\UART:tmpIO_0__tx_net_0\),
+		siovref=>(\UART:tmpSIOVREF__tx_net_0\),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -307,7 +307,7 @@ one <=  ('1') ;
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>\UART_1:tmpINTERRUPT_0__tx_net_0\);
+		interrupt=>\UART:tmpINTERRUPT_0__tx_net_0\);
 GS_1:cy_gsref_v1_0
 	GENERIC MAP(guid=>"1563FAA8-0748-4a1c-9785-CED309984BE3")
 	PORT MAP(sig_out=>Net_46);

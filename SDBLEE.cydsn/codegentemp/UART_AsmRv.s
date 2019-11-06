@@ -1,5 +1,5 @@
 ;==============================================================================
-; File Name: UART_1_AsmGnu.s
+; File Name: UART_AsmGnu.s
 ; Version 1.50
 ;
 ;  Description:
@@ -13,9 +13,9 @@
 ;==============================================================================
 
 
-    IMPORT UART_1_pinNumber
-    IMPORT UART_1_pinPortNumber
-    IMPORT UART_1_pinDrAdress
+    IMPORT UART_pinNumber
+    IMPORT UART_pinPortNumber
+    IMPORT UART_pinDrAdress
     IMPORT CyDelayCycles
     IMPORT CyEnterCriticalSection
     IMPORT CyExitCriticalSection
@@ -29,7 +29,7 @@
 
 
 ;-------------------------------------------------------------------------------
-; Function Name: UART_1_PutChar
+; Function Name: UART_PutChar
 ;-------------------------------------------------------------------------------
 ;
 ; Summary:
@@ -42,10 +42,10 @@
 ;  None
 ;
 ;-------------------------------------------------------------------------------
-; void UART_1_PutChar(uint8 txDataByte)
+; void UART_PutChar(uint8 txDataByte)
     ALIGN 8
-UART_1_PutChar FUNCTION
-    EXPORT UART_1_PutChar
+UART_PutChar FUNCTION
+    EXPORT UART_PutChar
     PUSH {r1, r2, r3, r4, r5, r6, r7, lr}
     MOV r1, r9
     MOV r2, r10
@@ -143,9 +143,9 @@ bitTxLoop
     POP {r1, r2, r3, r4, r5, r6, r7, pc}
 	ALIGN 8
 
-PIN_NUMBER DCD UART_1_pinNumber
-PORT_NUMBER DCD UART_1_pinPortNumber
-PORT_DR_ADDRESS DCD UART_1_pinDrAdress
+PIN_NUMBER DCD UART_pinNumber
+PORT_NUMBER DCD UART_pinPortNumber
+PORT_DR_ADDRESS DCD UART_pinDrAdress
 FREQ DCD cydelayFreqHz
 BAUD_RATE DCD 9600
     ENDFUNC

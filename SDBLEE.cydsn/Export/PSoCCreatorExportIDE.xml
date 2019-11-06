@@ -38,8 +38,12 @@
         <Files Root="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">SD_I2C.c</File>
+          <File BuildType="BUILD" Toolchain="">debug.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">SD_I2C.h</File>
+          <File BuildType="BUILD" Toolchain="">debug.h</File>
+          <File BuildType="BUILD" Toolchain="">options.h</File>
+          <File BuildType="BUILD" Toolchain="">common.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\Generated_Source\PSoC4">
@@ -109,12 +113,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC4\UART_1_AsmGnu.s</File>
-          <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC4\UART_1_AsmRv.s</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_1_PVT.h</File>
-          <File BuildType="BUILD" Toolchain="ARM IAR Generic">Generated_Source\PSoC4\UART_1_AsmIar.s</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\isr_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Blue.c</File>
@@ -170,6 +168,12 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Volt_Regulator_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Volt_Regulator_intClock.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Volt_Regulator_intClock.h</File>
+          <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC4\UART_AsmGnu.s</File>
+          <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC4\UART_AsmRv.s</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\UART_PVT.h</File>
+          <File BuildType="BUILD" Toolchain="ARM IAR Generic">Generated_Source\PSoC4\UART_AsmIar.s</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\Export\ARM_GCC_Generic\BLE_v3_61">

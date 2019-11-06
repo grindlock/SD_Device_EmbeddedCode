@@ -1,10 +1,9 @@
 ;==============================================================================
-;
-; File Name: UART_1_AsmIar.s
+; File Name: UART_AsmGnu.s
 ; Version 1.50
 ;
 ;  Description:
-;   Iar assembly routines for PSoC 4.
+;   ARM RVDS assembly routines for PSoC 4.
 ;
 ;==============================================================================
 ; Copyright 2013-2015, Cypress Semiconductor Corporation.  All rights reserved.
@@ -14,23 +13,24 @@
 ;==============================================================================
 
 
-    IMPORT UART_1_pinNumber
-    IMPORT UART_1_pinPortNumber
-    IMPORT UART_1_pinDrAdress
+    IMPORT UART_pinNumber
+    IMPORT UART_pinPortNumber
+    IMPORT UART_pinDrAdress
     IMPORT CyDelayCycles
     IMPORT CyEnterCriticalSection
     IMPORT CyExitCriticalSection
     IMPORT cydelayFreqHz
     IMPORT __aeabi_uidiv
-
-    SECTION .text:CODE:ROOT(2)
-    PUBLIC UART_1_PutChar
-    THUMB
+    PRESERVE8
 
 
-;------------------------------------------------------------------------------
-; Function Name: UART_1_PutChar
-;------------------------------------------------------------------------------
+	AREA |.text|,CODE,ALIGN=3
+	THUMB
+
+
+;-------------------------------------------------------------------------------
+; Function Name: UART_PutChar
+;-------------------------------------------------------------------------------
 ;
 ; Summary:
 ;  Sends one byte via the Tx pin.
@@ -41,10 +41,11 @@
 ; Return:
 ;  None
 ;
-;------------------------------------------------------------------------------
-; void UART_1_PutChar(uint8 txDataByte)
-.thumb_func
-UART_1_PutChar:
+;-------------------------------------------------------------------------------
+; void UART_PutChar(uint8 txDataByte)
+    ALIGN 8
+UART_PutChar FUNCTION
+    EXPORT UART_PutChar
     PUSH {r1, r2, r3, r4, r5, r6, r7, lr}
     MOV r1, r9
     MOV r2, r10
@@ -77,7 +78,7 @@ UART_1_PutChar:
     MOVS r1, #1                     ;   1       2
     LSLS r1, r1, r2                 ;   1       2
     MVNS r1, r1                     ;   1       2
-    MOVS r4, r1                     ;   1       2   Save pin state mask to [r4]
+    MOV r4, r1                      ;   1       2   Save pin state mask to [r4]
     MOVS r5, #1                     ;   1       2   Prepare lower bit mask [r5]
     MOVS r6, #0                     ;   1       2   Prepare counter
 
@@ -91,10 +92,10 @@ UART_1_PutChar:
     STR r3, [r1, #0]                ;   2       2
     
     MOV r0, r11                     ;   1       2
-    ADDS r0, r0, #4                 ;   1       2   Adjust delay
+    ADDS r0, #4                     ;   1       2   Adjust delay
     BL CyDelayCycles                ;   4+4     2
 
-bitTxLoop:
+bitTxLoop
                                     ;               Transmit bit loop
     MOVS r0, r7                     ;   1       2   Move byte to r0
     LSRS r0, r0, r6                 ;   1       2   Shift byte by counter
@@ -115,7 +116,7 @@ bitTxLoop:
     ;                                   24      26
 
     MOVS r0, #0                     ;   1       2   Wait 2 extra cycles
-    ADDS r0, r0, #1                 ;   1       2
+    ADDS r0, #1                     ;   1       2
 
                                     ;               Transmitting STOP bit
     MOVS r0, #1                     ;   1       2
@@ -126,7 +127,7 @@ bitTxLoop:
     ORRS r3, r3, r0                 ;   1       2
     STR r3, [r1, #0]                ;   2       2
     MOV r0, r11                     ;   1       2
-    ADDS r0, r0, #6                 ;   1       2   Adjust delay
+    ADDS r0, #6                     ;   1       2   Adjust delay
 
     BL CyDelayCycles                ;   4       2
 
@@ -140,14 +141,15 @@ bitTxLoop:
     MOV r10, r2
     MOV r11, r3
     POP {r1, r2, r3, r4, r5, r6, r7, pc}
+	ALIGN 8
 
-    DATA
-PIN_NUMBER dc32 UART_1_pinNumber
-PORT_NUMBER dc32 UART_1_pinPortNumber
-PORT_DR_ADDRESS dc32 UART_1_pinDrAdress
-FREQ dc32 cydelayFreqHz
-BAUD_RATE dc32 9600
-
+PIN_NUMBER DCD UART_pinNumber
+PORT_NUMBER DCD UART_pinPortNumber
+PORT_DR_ADDRESS DCD UART_pinDrAdress
+FREQ DCD cydelayFreqHz
+BAUD_RATE DCD 9600
+    ENDFUNC
+    
     END
 
 

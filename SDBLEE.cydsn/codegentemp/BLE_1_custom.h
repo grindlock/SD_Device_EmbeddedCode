@@ -40,6 +40,7 @@
 #define CYBLE_RVAC_THERMOSTAT_THERMOUSERCCCD_DESC_INDEX   (0x01u) /* Index of thermoUserCCCD descriptor */
 #define CYBLE_RVAC_ERROR_CODES_CHAR_INDEX   (0x02u) /* Index of Error_Codes characteristic */
 #define CYBLE_RVAC_ERROR_CODES_ERRORCCCD_DESC_INDEX   (0x00u) /* Index of errorCCCD descriptor */
+#define CYBLE_RVAC_ERROR_CODES_CHARACTERISTIC_USER_DESCRIPTION_DESC_INDEX   (0x01u) /* Index of Characteristic User Description descriptor */
 
 
 #define CYBLE_RVAC_SERVICE_HANDLE   (0x0010u) /* Handle of RVAC service */
@@ -55,6 +56,7 @@
 #define CYBLE_RVAC_ERROR_CODES_DECL_HANDLE   (0x001Au) /* Handle of Error_Codes characteristic declaration */
 #define CYBLE_RVAC_ERROR_CODES_CHAR_HANDLE   (0x001Bu) /* Handle of Error_Codes characteristic */
 #define CYBLE_RVAC_ERROR_CODES_ERRORCCCD_DESC_HANDLE   (0x001Cu) /* Handle of errorCCCD descriptor */
+#define CYBLE_RVAC_ERROR_CODES_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x001Du) /* Handle of Characteristic User Description descriptor */
 
 
 

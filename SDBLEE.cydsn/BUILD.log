@@ -1,89 +1,23 @@
---------------- Build Started: 10/24/2019 12:39:39 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 10/27/2019 15:43:04 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/SD_I2C.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c SD_I2C.c -o .\CortexM0\ARM_GCC_541\Debug\SD_I2C.o
-SD_I2C.c: In function 'temperature_local_read':
-SD_I2C.c:60:9: warning: variable 'temperature' set but not used [-Wunused-but-set-variable]
-   uint8 temperature = 0;
-         ^
-SD_I2C.c: In function 'temperature_remote_read':
-SD_I2C.c:68:7: warning: variable 'temperature' set but not used [-Wunused-but-set-variable]
- uint8 temperature = 0;
-       ^
-SD_I2C.c: In function 'gpio_expander_read':
-SD_I2C.c:138:12: warning: unused variable 'read' [-Wunused-variable]
-     uint16 read = Read_sensor_byte(address, reg);
-            ^
-In file included from SD_I2C.c:13:0:
-SD_I2C.c: In function 'humidity_sensor_ID':
-SD_I2C.h:21:22: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
- #define REG_HUM_ID_0 (0xFA)
-                      ^
-SD_I2C.c:149:53: note: in expansion of macro 'REG_HUM_ID_0'
-     I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_0,REG_HUM_ID_1}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                     ^
-SD_I2C.h:21:22: note: (near initialization for '(anonymous)')
- #define REG_HUM_ID_0 (0xFA)
-                      ^
-SD_I2C.c:149:53: note: in expansion of macro 'REG_HUM_ID_0'
-     I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_0,REG_HUM_ID_1}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                     ^
-SD_I2C.h:22:22: warning: excess elements in scalar initializer
- #define REG_HUM_ID_1 (0x0F) 
-                      ^
-SD_I2C.c:149:66: note: in expansion of macro 'REG_HUM_ID_1'
-     I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_0,REG_HUM_ID_1}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                                  ^
-SD_I2C.h:22:22: note: (near initialization for '(anonymous)')
- #define REG_HUM_ID_1 (0x0F) 
-                      ^
-SD_I2C.c:149:66: note: in expansion of macro 'REG_HUM_ID_1'
-     I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_0,REG_HUM_ID_1}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                                  ^
-SD_I2C.h:23:22: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
- #define REG_HUM_ID_2 (0xFC) 
-                      ^
-SD_I2C.c:155:54: note: in expansion of macro 'REG_HUM_ID_2'
-      I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_2,REG_HUM_ID_3}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                      ^
-SD_I2C.h:23:22: note: (near initialization for '(anonymous)')
- #define REG_HUM_ID_2 (0xFC) 
-                      ^
-SD_I2C.c:155:54: note: in expansion of macro 'REG_HUM_ID_2'
-      I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_2,REG_HUM_ID_3}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                      ^
-SD_I2C.h:24:22: warning: excess elements in scalar initializer
- #define REG_HUM_ID_3 (0xC9) 
-                      ^
-SD_I2C.c:155:67: note: in expansion of macro 'REG_HUM_ID_3'
-      I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_2,REG_HUM_ID_3}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                                   ^
-SD_I2C.h:24:22: note: (near initialization for '(anonymous)')
- #define REG_HUM_ID_3 (0xC9) 
-                      ^
-SD_I2C.c:155:67: note: in expansion of macro 'REG_HUM_ID_3'
-      I2C_1_I2CMasterWriteBuf(ADDR_HUMTEMP, (uint8 *){REG_HUM_ID_2,REG_HUM_ID_3}, 2, I2C_1_I2C_MODE_NO_STOP);
-                                                                   ^
-SD_I2C.c:144:11: warning: unused variable 'write_buff' [-Wunused-variable]
-     uint8 write_buff[2] ={REG_HUM_ID_0, REG_HUM_ID_1};
-           ^
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_1.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE_1.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_1.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_1_gatt.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE_1_gatt.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_1_gatt.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_1_eventHandler.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE_1_eventHandler.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_1_eventHandler.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_1_HAL_INT.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE_1_HAL_INT.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_INT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_1_HAL_PVT.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE_1_HAL_PVT.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_PVT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/BLE_1_custom.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\BLE_1_custom.c -o .\CortexM0\ARM_GCC_541\Debug\BLE_1_custom.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Volt_Regulator.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\Volt_Regulator.c -o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Volt_Regulator_PM.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\Volt_Regulator_PM.c -o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/Volt_Regulator_INT.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC4\Volt_Regulator_INT.c -o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_INT.o
-arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a .\CortexM0\ARM_GCC_541\Debug\BLE_1.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_gatt.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_eventHandler.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_INT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_PVT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_custom.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_bless_isr.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\UART_1.o .\CortexM0\ARM_GCC_541\Debug\isr_1.o .\CortexM0\ARM_GCC_541\Debug\Blue.o .\CortexM0\ARM_GCC_541\Debug\Blue_PM.o .\CortexM0\ARM_GCC_541\Debug\Red.o .\CortexM0\ARM_GCC_541\Debug\Red_PM.o .\CortexM0\ARM_GCC_541\Debug\Green.o .\CortexM0\ARM_GCC_541\Debug\Green_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_INT.o .\CortexM0\ARM_GCC_541\Debug\volt.o .\CortexM0\ARM_GCC_541\Debug\volt_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_IRQ.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_intClock.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_541\Debug\UART_1_AsmGnu.o
+In file included from debug.h:25:0,
+                 from main.c:23:
+options.h:30:0: warning: "DEBUG_UART_ENABLED" redefined
+ #define DEBUG_UART_ENABLED      (YES)
+ ^
+In file included from main.c:22:0:
+common.h:26:0: note: this is the location of the previous definition
+ #define DEBUG_UART_ENABLED          ENABLED
+ ^
+arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a .\CortexM0\ARM_GCC_541\Debug\BLE_1.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_gatt.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_eventHandler.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_INT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_PVT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_custom.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_bless_isr.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\isr_1.o .\CortexM0\ARM_GCC_541\Debug\Blue.o .\CortexM0\ARM_GCC_541\Debug\Blue_PM.o .\CortexM0\ARM_GCC_541\Debug\Red.o .\CortexM0\ARM_GCC_541\Debug\Red_PM.o .\CortexM0\ARM_GCC_541\Debug\Green.o .\CortexM0\ARM_GCC_541\Debug\Green_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_INT.o .\CortexM0\ARM_GCC_541\Debug\volt.o .\CortexM0\ARM_GCC_541\Debug\volt_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_IRQ.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_intClock.o .\CortexM0\ARM_GCC_541\Debug\UART.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_541\Debug\UART_AsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a
-arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf" .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\SD_I2C.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a "..\..\4.2\Downloads ( 4.2).cylib\BLE_v3_61\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/SDBLEE.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf" .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\SD_I2C.o .\CortexM0\ARM_GCC_541\Debug\debug.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a "..\..\4.2\Downloads ( 4.2).cylib\BLE_v3_61\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/SDBLEE.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
 cyelftool.exe -C "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf" --flash_row_size 128 --flash_size 131072 --flash_offset 0x00000000
 No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf"
-Flash used: 87212 of 131072 bytes (66.5%).
-SRAM used: 11196 of 16384 bytes (68.3%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 10/24/2019 12:39:44 ---------------
+Flash used: 91998 of 131072 bytes (70.2%).
+SRAM used: 11284 of 16384 bytes (68.9%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 10/27/2019 15:43:06 ---------------
