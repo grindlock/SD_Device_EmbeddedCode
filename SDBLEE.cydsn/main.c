@@ -86,10 +86,10 @@ typedef struct{
 thermostatData thermo;
 
 void updateThermostatData(void){
-    
-    thermoHandle.attrHandle = CYBLE_RVAC_THERMOSTAT_THERMOCCCD_DESC_HANDLE;
-    thermoHandle.value.val = (int8 *) {thermo.compressor, thermo.fan,
+    int8 thermoTemp[] = {thermo.compressor, thermo.fan,
     thermo.setTemperature, thermo.ambientTemp};
+    thermoHandle.attrHandle = CYBLE_RVAC_THERMOSTAT_THERMOCCCD_DESC_HANDLE;
+    thermoHandle.value.val = (uint8 *) thermoTemp;
     thermoHandle.value.len = 4; 
     thermoHandle.value.actualLen = 4; 
     
@@ -278,60 +278,80 @@ void check_sensors(){
     
     if(!humidity_sensor_ID()){
         error.err_Hum = 1;
+        DBG_PRINTF("Humidity sensor is not working.");
     }
-    else if(!temperature_TI431_sensor_ID()){
+    if(!temperature_TI431_sensor_ID()){
         error.err_Temp = 1;
+        DBG_PRINTF("Temperature sensor TI 431 is not working.");
     }
-    else if(!temperature_TI432_sensor_ID()){
+    if(!temperature_TI432_sensor_ID()){
         error.err_Temp = 1;
+        DBG_PRINTF("Temperature sensor TI 432 is not working.");
     }
-    else if(!current_voltage_sensor_ID(ADDR_POWER1)){
+    if(!current_voltage_sensor_ID(ADDR_POWER1)){
         error.err_Power = 1;
+        DBG_PRINTF("Voltage sensor 1 is not working.");
     }
-    else if(!current_voltage_sensor_ID(ADDR_POWER2)){
+    if(!current_voltage_sensor_ID(ADDR_POWER2)){
         error.err_Power = 1;
+        DBG_PRINTF("Voltage sensor 2 is not working.");
     }
-    else if(!current_voltage_sensor_ID(ADDR_POWER3)){
+    if(!current_voltage_sensor_ID(ADDR_POWER3)){
         error.err_Power = 1;
+        DBG_PRINTF("Voltage sensor 3 is not working.");
     }
-    else if (!accelerametor_sensor_ID()){
+    if (!accelerametor_sensor_ID()){
         error.err_Acc = 1;
+        DBG_PRINTF("Accelerametor sensor is not working.");
+    }
+    if(error.err_Power == 0 && error.err_Temp == 0 && error.err_Hum == 0 && error.err_Acc == 0){
+        DBG_PRINTF("All sensor sensor are working.");
     }
     
 }
 
-//CY_ISR(Volt_Regulator_SAR_SEQ_ISR_LOC){
-//    
-//    uint32 intr_status;
-//    intr_status =  Volt_Regulator_SAR_INTR_REG;;
-//    
-//    // place code here
-//    
-//    Volt_Regulator_SAR_INTR_REG = intr_status;
-//    
-//    
-//}
-
 void read_i2c_sensors(){
 sensorData.humidity = humidity_read(ADDR_HUMTEMP, REG_HUMSENSOR_HUM);
+DBG_PRINTF("Read from hunidity sensor: %% %d", sensorData.humidity);
 sensorData.localTemp = temperature_local_read(ADDR_TEMP431, REG_LH_TMP431);
+DBG_PRINTF("Read from TEMP431 local sensor: %d", sensorData.localTemp);
 sensorData.remoteTemp1 = temperature_remote_read(ADDR_TEMP431, REG_RH_TEMP431);
+DBG_PRINTF("Read from TEMP431 remote sensor 1: %d", sensorData.remoteTemp1);
 sensorData.remoteTemp2 = temperature_remote_read(ADDR_TEMP432, REG_RH1_TMP432);
+DBG_PRINTF("Read from TEMP432 remote sensor 2: %d", sensorData.remoteTemp2);
 sensorData.remoteTemp3 = temperature_remote_read(ADDR_TEMP432, REG_RH2_TMP432);
+DBG_PRINTF("Read from TEMP432 remote sensor 3: %d", sensorData.remoteTemp3);
 sensorData.currentCompressor = current_read(ADDR_POWER1, REG_CURRRMS);
+DBG_PRINTF("Read current compressor: %d", sensorData.currentCompressor);
 sensorData.currentFan = current_read(ADDR_POWER2, REG_CURRRMS);
+DBG_PRINTF("Read current fan: %d", sensorData.currentFan);
 sensorData.current = current_read(ADDR_POWER3, REG_CURRRMS);
+DBG_PRINTF("Read current : %d", sensorData.current);
 sensorData.voltCompressor = voltage_read(ADDR_POWER1, REG_VOLTRMS);
+DBG_PRINTF("Read voltage compressor: %d", sensorData.voltCompressor);
 sensorData.voltFan = voltage_read(ADDR_POWER2, REG_VOLTRMS);
+DBG_PRINTF("Read voltage fan: %d", sensorData.voltFan);
 sensorData.volt = voltage_read(ADDR_POWER3, REG_VOLTRMS);
+DBG_PRINTF("Read voltage : %d", sensorData.volt);
 sensorData.lineFreqComp = line_frequency_read(ADDR_POWER1, REG_LINEFREQ);
+DBG_PRINTF("Read freq compressor: %d", sensorData.lineFreqComp);
 sensorData.lineFreqFan = line_frequency_read(ADDR_POWER2, REG_LINEFREQ);
+DBG_PRINTF("Read freq fan: %d", sensorData.lineFreqFan);
 sensorData.lineFreq = line_frequency_read(ADDR_POWER3, REG_LINEFREQ);
-sensorData.accX = x_accelerometer_read(ADDR_ACC, REG_XLSB, REG_XMSB);   
-sensorData.accZ = y_accelerometer_read(ADDR_ACC, REG_YLSB, REG_YMSB); 
-sensorData.accY = z_accelerometer_read(ADDR_ACC, REG_ZLSB, REG_ZMSB); 
+DBG_PRINTF("Read freq : %d", sensorData.lineFreq);
+sensorData.accX = x_accelerometer_read(ADDR_ACC, REG_XLSB, REG_XMSB);  
+DBG_PRINTF("Read x-axis : %d", sensorData.accX);
+sensorData.accZ = y_accelerometer_read(ADDR_ACC, REG_YLSB, REG_YMSB);
+DBG_PRINTF("Read y-axis send as the z-axis : %d", sensorData.accZ);
+sensorData.accY = z_accelerometer_read(ADDR_ACC, REG_ZLSB, REG_ZMSB);
+DBG_PRINTF("Read z-axis send as the y-axis : %d", sensorData.accY);
 }
 
+void initialization(){
+    CE_Pin_Write(1);
+    ce_flag = 1;
+    check_sensors();
+}
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -360,28 +380,21 @@ int main(void)
     for(;;)
     {
         Red_Write(1);
-        //WDT_ISR_StartEx();
-       
-        /* Place your application code here. */
-//        advPayload[16] = collectedData[0];
-//        advPayload[17] = collectedData[1];
-//        advPayload[18] = collectedData[2];
-//        advPayload[19] = collectedData[3];
+   
         
         
         voltFromPin8 = Volt_Regulator_GetResult16(0);
         Volt_Regulator_SetGain(0,1100);
         adcVoltConverted = Volt_Regulator_CountsTo_Volts(0,voltFromPin8);
+        DBG_PRINTF("ADC volt converted var: %d", adcVoltConverted); 
         
         //turn on or off the volt regulator
         
         if(adcVoltConverted != prevRead){
             prevRead = adcVoltConverted;
-            if( adcVoltConverted >= 7){
-                CE_Pin_Write(1);
-                ce_flag = 1;
-                check_sensors();
-               
+            if( adcVoltConverted >= 7 && ce_flag != 1){
+                initialization();
+    
             }
             else{
                 CE_Pin_Write(0);
@@ -391,37 +404,10 @@ int main(void)
         // read i2c sensors if ce flag is 1
         if(ce_flag){
             read_i2c_sensors();
+         
+            
         }
         
-        
-        
-        
-
-        
-        ///BLE code
-       if(bleConnected == 1){
-
-        updateNotificationCCCD();
-        
-        if(isNotify == 1){
-            Green_Write(1);
-            if(CyBle_GattGetBusStatus() == CYBLE_STACK_STATE_FREE){
-             Blue_Write(0);
-                SendDataNotify(sizeof(sensorData));
-                Blue_Write(1);
-           }
-        }
-        else{
-            Green_Write(thermostat[0]);
-        }
-    }else{ 
-        Blue_Write(1);
-        Green_Write(1);}
-    //END Ble code
-        
-
-
-        //CyBle_GapUpdateAdvData(cyBle_discoveryModeInfo.advData, cyBle_discoveryModeInfo.scanRspData); //Update data in Advertisment Packet 
         CyBle_ProcessEvents();
     }
 }
