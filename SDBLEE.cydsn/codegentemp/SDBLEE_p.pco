@@ -1,5 +1,3 @@
-dont_use_io iocell 0 6
-dont_use_io iocell 0 7
 dont_use_location LPCOMP -1 -1 0
 dont_use_location p4lpcompcell -1 -1 0
 dont_use_location LPCOMP -1 -1 1
@@ -13,20 +11,36 @@ dont_use_location p4abufcell -1 -1 2
 dont_use_location mxs40_opamp -1 -1 3
 dont_use_location p4abufcell -1 -1 3
 set_location "SRSS" m0s8srsscell -1 -1 0
+set_io "AF(0)" iocell 0 4
+set_io "\SPI_1:sclk_s(0)\" iocell 1 7
+set_io "\SPI_1:ss_s(0)\" iocell 1 6
 set_location "\Volt_Regulator:cy_psoc4_sar\" p4sarcell -1 -1 0
+set_location "\SPI_1:SCB\" m0s8scbcell -1 -1 0
 set_location "\BLE_1:cy_m0s8_ble\" p4blecell -1 -1 0
-set_location "\I2C_1:SCB\" m0s8scbcell -1 -1 1
+set_io "\SPI_1:mosi_s(0)\" iocell 1 4
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
 set_location "isr_1" interrupt -1 -1 8
-set_location "\BLE_1:bless_isr\" interrupt -1 -1 12
+set_location "\I2C_1:SCB\" m0s8scbcell -1 -1 1
+set_io "SCLK(0)" iocell 0 7
+set_io "SDAT(0)" iocell 0 6
 set_location "\I2C_1:SCB_IRQ\" interrupt -1 -1 10
+set_location "\BLE_1:bless_isr\" interrupt -1 -1 12
+set_io "ST1_2(0)" iocell 2 4
 set_location "\Volt_Regulator:IRQ\" interrupt -1 -1 15
 set_io "\I2C_1:sda(0)\" iocell 5 0
+set_io "\SPI_1:miso_s(0)\" iocell 1 5
+set_io "ST3_4(0)" iocell 2 0
 set_location "ClockBlock" m0s8clockblockcell -1 -1 0
 set_io "\UART:tx(0)\" iocell 1 0
-set_io "Blue(0)" iocell 3 6
-set_io "Red(0)" iocell 4 0
+set_io "Blue(0)" iocell 4 0
+set_io "Red(0)" iocell 3 6
 set_io "Green(0)" iocell 3 7
 set_io "CE_Pin(0)" iocell 0 5
 set_io "volt(0)" iocell 3 2
+set_io "Comp_Out(0)" iocell 2 6
+set_io "Fan_High_Out(0)" iocell 2 3
+set_io "Fan_Low_Out(0)" iocell 2 2
+set_io "COMP(0)" iocell 3 5
+set_io "Fan_High(0)" iocell 3 3
+set_io "Fan_Low(0)" iocell 3 4
 set_io "\I2C_1:scl(0)\" iocell 5 1

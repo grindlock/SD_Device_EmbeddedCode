@@ -27,14 +27,13 @@
 #define CYBLE_CUSTOMS_SERVICE_COUNT                  (0x01u)
 #define CYBLE_CUSTOMC_SERVICE_COUNT                  (0x00u)
 #define CYBLE_CUSTOM_SERVICE_CHAR_COUNT              (0x03u)
-#define CYBLE_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x03u)
+#define CYBLE_CUSTOM_SERVICE_CHAR_DESCRIPTORS_COUNT  (0x02u)
 
 /* Below are the indexes and handles of the defined Custom Services and their characteristics */
 #define CYBLE_RVAC_SERVICE_INDEX   (0x00u) /* Index of RVAC service in the cyBle_customs array */
 #define CYBLE_RVAC_SENSORS_CHAR_INDEX   (0x00u) /* Index of Sensors characteristic */
-#define CYBLE_RVAC_SENSORS_SERVER_CHARACTERISTIC_CONFIGURATION_DESC_INDEX   (0x00u) /* Index of Server Characteristic Configuration descriptor */
-#define CYBLE_RVAC_SENSORS_SENSORUSERCCCD_DESC_INDEX   (0x01u) /* Index of sensorUserCCCD descriptor */
-#define CYBLE_RVAC_SENSORS_SENSORCCCD_DESC_INDEX   (0x02u) /* Index of sensorCCCD descriptor */
+#define CYBLE_RVAC_SENSORS_SENSORUSERCCCD_DESC_INDEX   (0x00u) /* Index of sensorUserCCCD descriptor */
+#define CYBLE_RVAC_SENSORS_SENSORCCCD_DESC_INDEX   (0x01u) /* Index of sensorCCCD descriptor */
 #define CYBLE_RVAC_THERMOSTAT_CHAR_INDEX   (0x01u) /* Index of Thermostat characteristic */
 #define CYBLE_RVAC_THERMOSTAT_THERMOCCCD_DESC_INDEX   (0x00u) /* Index of thermoCCCD descriptor */
 #define CYBLE_RVAC_THERMOSTAT_THERMOUSERCCCD_DESC_INDEX   (0x01u) /* Index of thermoUserCCCD descriptor */
@@ -46,17 +45,16 @@
 #define CYBLE_RVAC_SERVICE_HANDLE   (0x0010u) /* Handle of RVAC service */
 #define CYBLE_RVAC_SENSORS_DECL_HANDLE   (0x0011u) /* Handle of Sensors characteristic declaration */
 #define CYBLE_RVAC_SENSORS_CHAR_HANDLE   (0x0012u) /* Handle of Sensors characteristic */
-#define CYBLE_RVAC_SENSORS_SERVER_CHARACTERISTIC_CONFIGURATION_DESC_HANDLE   (0x0013u) /* Handle of Server Characteristic Configuration descriptor */
-#define CYBLE_RVAC_SENSORS_SENSORUSERCCCD_DESC_HANDLE   (0x0014u) /* Handle of sensorUserCCCD descriptor */
-#define CYBLE_RVAC_SENSORS_SENSORCCCD_DESC_HANDLE   (0x0015u) /* Handle of sensorCCCD descriptor */
-#define CYBLE_RVAC_THERMOSTAT_DECL_HANDLE   (0x0016u) /* Handle of Thermostat characteristic declaration */
-#define CYBLE_RVAC_THERMOSTAT_CHAR_HANDLE   (0x0017u) /* Handle of Thermostat characteristic */
-#define CYBLE_RVAC_THERMOSTAT_THERMOCCCD_DESC_HANDLE   (0x0018u) /* Handle of thermoCCCD descriptor */
-#define CYBLE_RVAC_THERMOSTAT_THERMOUSERCCCD_DESC_HANDLE   (0x0019u) /* Handle of thermoUserCCCD descriptor */
-#define CYBLE_RVAC_ERROR_CODES_DECL_HANDLE   (0x001Au) /* Handle of Error_Codes characteristic declaration */
-#define CYBLE_RVAC_ERROR_CODES_CHAR_HANDLE   (0x001Bu) /* Handle of Error_Codes characteristic */
-#define CYBLE_RVAC_ERROR_CODES_ERRORCCCD_DESC_HANDLE   (0x001Cu) /* Handle of errorCCCD descriptor */
-#define CYBLE_RVAC_ERROR_CODES_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x001Du) /* Handle of Characteristic User Description descriptor */
+#define CYBLE_RVAC_SENSORS_SENSORUSERCCCD_DESC_HANDLE   (0x0013u) /* Handle of sensorUserCCCD descriptor */
+#define CYBLE_RVAC_SENSORS_SENSORCCCD_DESC_HANDLE   (0x0014u) /* Handle of sensorCCCD descriptor */
+#define CYBLE_RVAC_THERMOSTAT_DECL_HANDLE   (0x0015u) /* Handle of Thermostat characteristic declaration */
+#define CYBLE_RVAC_THERMOSTAT_CHAR_HANDLE   (0x0016u) /* Handle of Thermostat characteristic */
+#define CYBLE_RVAC_THERMOSTAT_THERMOCCCD_DESC_HANDLE   (0x0017u) /* Handle of thermoCCCD descriptor */
+#define CYBLE_RVAC_THERMOSTAT_THERMOUSERCCCD_DESC_HANDLE   (0x0018u) /* Handle of thermoUserCCCD descriptor */
+#define CYBLE_RVAC_ERROR_CODES_DECL_HANDLE   (0x0019u) /* Handle of Error_Codes characteristic declaration */
+#define CYBLE_RVAC_ERROR_CODES_CHAR_HANDLE   (0x001Au) /* Handle of Error_Codes characteristic */
+#define CYBLE_RVAC_ERROR_CODES_ERRORCCCD_DESC_HANDLE   (0x001Bu) /* Handle of errorCCCD descriptor */
+#define CYBLE_RVAC_ERROR_CODES_CHARACTERISTIC_USER_DESCRIPTION_DESC_HANDLE   (0x001Cu) /* Handle of Characteristic User Description descriptor */
 
 
 

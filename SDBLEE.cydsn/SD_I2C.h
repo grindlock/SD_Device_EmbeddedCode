@@ -64,7 +64,8 @@
 
 // PCA9538A datasheet  https://www.nxp.com/docs/en/data-sheet/PCA9538A.pdf
 #define ADDR_GPIO (0x70)
-#define REG_
+#define REG_GPIO_READ (0x00)
+#define REG_GPIO_CONFIG (0x03)
 
 uint16 Read_sensor_word(uint32 address, uint8 reg);
 
@@ -97,6 +98,9 @@ int temperature_TI431_sensor_ID();
 int temperature_TI432_sensor_ID();
 int current_voltage_sensor_ID(uint32 address);
 int accelerametor_sensor_ID();
+
+void initialized_gpioExp();
+uint8 read_gpioExp_pins();
 
 #endif
 /* [] END OF FILE */

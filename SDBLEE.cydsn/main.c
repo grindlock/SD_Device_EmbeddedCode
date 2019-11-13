@@ -106,18 +106,18 @@ void bleStack(uint32 event, void *eventParam){
     
      
         case CYBLE_EVT_STACK_ON:
-           apiResult = CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
-            if(apiResult != CYBLE_ERROR_OK){
-             DBG_PRINTF("Start Advertisement API Error: %d \r\n",apiResult);   
-            }
-            DBG_PRINTF("Bluetooth On, StartAdvertisement with addr: ");
-            localAddr.type = 0u;
-            CyBle_GetDeviceAddress(&localAddr);
-            for(uint i = CYBLE_GAP_BD_ADDR_SIZE; i > 0u; i--)
-            {
-                DBG_PRINTF("%2.2x", localAddr.bdAddr[i-1]);
-            }
-            DBG_PRINTF("\r\n");
+          CyBle_GappStartAdvertisement(CYBLE_ADVERTISING_FAST);
+//            if(apiResult != CYBLE_ERROR_OK){
+//            // DBG_PRINTF("Start Advertisement API Error: %d \r\n",apiResult);   
+//            }
+            //DBG_PRINTF("Bluetooth On, StartAdvertisement with addr: ");
+//            localAddr.type = 0u;
+//            CyBle_GetDeviceAddress(&localAddr);
+//            for(uint i = CYBLE_GAP_BD_ADDR_SIZE; i > 0u; i--)
+//            {
+//                DBG_PRINTF("%2.2x", localAddr.bdAddr[i-1]);
+//            }
+//            DBG_PRINTF("\r\n");
         case CYBLE_EVT_GAP_DEVICE_CONNECTED:
             //CyBle_GappStopAdvertisement(); 
             break;
@@ -166,6 +166,8 @@ void bleStack(uint32 event, void *eventParam){
                 thermo.compressor = wrReq.handleValPair.value.val[0];
                 thermo.fan= wrReq.handleValPair.value.val[1];
                 thermo.setTemperature = wrReq.handleValPair.value.val[2];
+                
+                thermostat[0] = thermo.compressor;
                
                 updateThermostatData();
                 
@@ -187,7 +189,7 @@ void send_Thermo_to_phone(){
     CYBLE_GATT_HANDLE_VALUE_PAIR_T thermoRead;
     
      thermoRead.attrHandle = CYBLE_RVAC_THERMOSTAT_CHAR_HANDLE;
-        thermoRead.value.val = (int8 *) {thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
+        thermoRead.value.val = (uint8 *) &thermostat;//{thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
         thermoRead.value.len = 4;
     
    CyBle_GattsWriteAttributeValue(&thermoRead, 0, &cyBle_connHandle, CYBLE_GATT_DB_PEER_INITIATED);
@@ -204,8 +206,8 @@ void SendDataNotify( uint8 len){
     
 
      notiHandle.attrHandle = CYBLE_RVAC_SENSORS_CHAR_HANDLE;
-     notiHandle.value.val = (uint8 *) dataForBLE;
-     notiHandle.value.len = 36;
+     notiHandle.value.val = (uint8 *) collectedData; //dataForBLE;
+     notiHandle.value.len = len; //36;
         
         CyBle_GattsNotification(cyBle_connHandle, &notiHandle);
 
@@ -239,7 +241,8 @@ uint8 randomNum(){
 }
 
 void wdtSleepInt(){
-     Red_Write(0);
+     //Red_Write(0);
+    
         collectedData[0] = randomNum();
         collectedData[1] = randomNum();
         collectedData[2] = randomNum();
@@ -253,7 +256,7 @@ void wdtSleepInt(){
             Green_Write(1);
             if(CyBle_GattGetBusStatus() == CYBLE_STACK_STATE_FREE){
              Blue_Write(0);
-                SendDataNotify(0);
+                SendDataNotify(4);
                 Blue_Write(1);
            }
         }
@@ -263,8 +266,9 @@ void wdtSleepInt(){
     }else{ 
         Blue_Write(1);
         Green_Write(1);
-        if(!isNotify && Green_Read()!=0){
-        Red_Write(0);}
+        if(isNotify == 0 && Green_Read()!=0){
+             Red_Write(0);
+        }
     }
  
      CySysWdtClearInterrupt(CY_SYS_WDT_COUNTER0_INT);
@@ -322,11 +326,11 @@ DBG_PRINTF("Read from TEMP432 remote sensor 2: %d", sensorData.remoteTemp2);
 sensorData.remoteTemp3 = temperature_remote_read(ADDR_TEMP432, REG_RH2_TMP432);
 DBG_PRINTF("Read from TEMP432 remote sensor 3: %d", sensorData.remoteTemp3);
 sensorData.currentCompressor = current_read(ADDR_POWER1, REG_CURRRMS);
-DBG_PRINTF("Read current compressor: %d", sensorData.currentCompressor);
+//DBG_PRINTF("Read current compressor: %d", sensorData.currentCompressor);
 sensorData.currentFan = current_read(ADDR_POWER2, REG_CURRRMS);
-DBG_PRINTF("Read current fan: %d", sensorData.currentFan);
+//DBG_PRINTF("Read current fan: %d", sensorData.currentFan);
 sensorData.current = current_read(ADDR_POWER3, REG_CURRRMS);
-DBG_PRINTF("Read current : %d", sensorData.current);
+//DBG_PRINTF("Read current : %d", sensorData.current);
 sensorData.voltCompressor = voltage_read(ADDR_POWER1, REG_VOLTRMS);
 DBG_PRINTF("Read voltage compressor: %d", sensorData.voltCompressor);
 sensorData.voltFan = voltage_read(ADDR_POWER2, REG_VOLTRMS);
@@ -350,7 +354,7 @@ DBG_PRINTF("Read z-axis send as the y-axis : %d", sensorData.accY);
 void initialization(){
     CE_Pin_Write(1);
     ce_flag = 1;
-    check_sensors();
+   // check_sensors();
 }
 int main(void)
 {
@@ -366,6 +370,9 @@ int main(void)
     
     UART_Start();
     
+    //DBG_PRINTF("Hello World! from DBG");
+    UART_PutString("Hello World! from regualar uart call\n");
+    
     //UART_UartPutString
     
     Volt_Regulator_Start(); // ADC at P3.2
@@ -375,18 +382,24 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     srand(time(0));
     
+    Red_Write(0);
+    CyDelay(300);
+    
     uint8 prevRead = 0;
     
     for(;;)
     {
         Red_Write(1);
-   
+   char str[40];
         
         
         voltFromPin8 = Volt_Regulator_GetResult16(0);
         Volt_Regulator_SetGain(0,1100);
         adcVoltConverted = Volt_Regulator_CountsTo_Volts(0,voltFromPin8);
-        DBG_PRINTF("ADC volt converted var: %d", adcVoltConverted); 
+        //DBG_PRINTF("ADC volt converted var: %d", adcVoltConverted); 
+        sprintf(str, "ADC volt converted var: %d\n", adcVoltConverted);
+        UART_PutString(str);
+        
         
         //turn on or off the volt regulator
         
@@ -403,7 +416,7 @@ int main(void)
         
         // read i2c sensors if ce flag is 1
         if(ce_flag){
-            read_i2c_sensors();
+           // read_i2c_sensors();
          
             
         }

@@ -36,33 +36,30 @@ const CYBLE_CUSTOMS_T cyBle_customs[0x01u] = {
                 
                 /* Array of Descriptors handles */
                 {
-                    0x0013u, /* Handle of the Server Characteristic Configuration descriptor */ 
-                    0x0014u, /* Handle of the sensorUserCCCD descriptor */ 
-                    0x0015u, /* Handle of the sensorCCCD descriptor */ 
+                    0x0013u, /* Handle of the sensorUserCCCD descriptor */ 
+                    0x0014u, /* Handle of the sensorCCCD descriptor */ 
                 }, 
             },
 
             /* Thermostat characteristic */
             {
-                0x0017u, /* Handle of the Thermostat characteristic */ 
+                0x0016u, /* Handle of the Thermostat characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x0018u, /* Handle of the thermoCCCD descriptor */ 
-                    0x0019u, /* Handle of the thermoUserCCCD descriptor */ 
-                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                    0x0017u, /* Handle of the thermoCCCD descriptor */ 
+                    0x0018u, /* Handle of the thermoUserCCCD descriptor */ 
                 }, 
             },
 
             /* Error_Codes characteristic */
             {
-                0x001Bu, /* Handle of the Error_Codes characteristic */ 
+                0x001Au, /* Handle of the Error_Codes characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
-                    0x001Cu, /* Handle of the errorCCCD descriptor */ 
-                    0x001Du, /* Handle of the Characteristic User Description descriptor */ 
-                    CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, 
+                    0x001Bu, /* Handle of the errorCCCD descriptor */ 
+                    0x001Cu, /* Handle of the Characteristic User Description descriptor */ 
                 }, 
             },
         }, 

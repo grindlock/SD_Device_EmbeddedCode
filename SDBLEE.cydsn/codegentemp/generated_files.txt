@@ -78,6 +78,62 @@
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt.h" value="HEADER;;;;;volt" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt_aliases.h" value="HEADER;;;;;volt" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\volt_PM.c" value="SOURCE_C;CortexM0;;;;volt" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1.c" value="SOURCE_C;CortexM0;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1.h" value="HEADER;;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SPI_UART.h" value="HEADER;;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SPI_UART.c" value="SOURCE_C;CortexM0;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_PM.c" value="SOURCE_C;CortexM0;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SPI.c" value="SOURCE_C;CortexM0;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_BOOT.c" value="SOURCE_C;CortexM0;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SPI_BOOT.c" value="SOURCE_C;CortexM0;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_PINS.h" value="HEADER;;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SPI_UART_PVT.h" value="HEADER;;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_PVT.h" value="HEADER;;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_BOOT.h" value="HEADER;;;;;SPI_1" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Comp_Out.c" value="SOURCE_C;CortexM0;;;;Comp_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Comp_Out.h" value="HEADER;;;;;Comp_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Comp_Out_aliases.h" value="HEADER;;;;;Comp_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Comp_Out_PM.c" value="SOURCE_C;CortexM0;;;;Comp_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High_Out.c" value="SOURCE_C;CortexM0;;;;Fan_High_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High_Out.h" value="HEADER;;;;;Fan_High_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High_Out_aliases.h" value="HEADER;;;;;Fan_High_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High_Out_PM.c" value="SOURCE_C;CortexM0;;;;Fan_High_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low_Out.c" value="SOURCE_C;CortexM0;;;;Fan_Low_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low_Out.h" value="HEADER;;;;;Fan_Low_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low_Out_aliases.h" value="HEADER;;;;;Fan_Low_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low_Out_PM.c" value="SOURCE_C;CortexM0;;;;Fan_Low_Out" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST1_2.c" value="SOURCE_C;CortexM0;;;;ST1_2" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST1_2.h" value="HEADER;;;;;ST1_2" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST1_2_aliases.h" value="HEADER;;;;;ST1_2" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST1_2_PM.c" value="SOURCE_C;CortexM0;;;;ST1_2" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST3_4.c" value="SOURCE_C;CortexM0;;;;ST3_4" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST3_4.h" value="HEADER;;;;;ST3_4" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST3_4_aliases.h" value="HEADER;;;;;ST3_4" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\ST3_4_PM.c" value="SOURCE_C;CortexM0;;;;ST3_4" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\COMP.c" value="SOURCE_C;CortexM0;;;;COMP" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\COMP.h" value="HEADER;;;;;COMP" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\COMP_aliases.h" value="HEADER;;;;;COMP" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\COMP_PM.c" value="SOURCE_C;CortexM0;;;;COMP" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High.c" value="SOURCE_C;CortexM0;;;;Fan_High" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High.h" value="HEADER;;;;;Fan_High" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High_aliases.h" value="HEADER;;;;;Fan_High" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_High_PM.c" value="SOURCE_C;CortexM0;;;;Fan_High" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low.c" value="SOURCE_C;CortexM0;;;;Fan_Low" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low.h" value="HEADER;;;;;Fan_Low" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low_aliases.h" value="HEADER;;;;;Fan_Low" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Fan_Low_PM.c" value="SOURCE_C;CortexM0;;;;Fan_Low" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\AF.c" value="SOURCE_C;CortexM0;;;;AF" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\AF.h" value="HEADER;;;;;AF" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\AF_aliases.h" value="HEADER;;;;;AF" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\AF_PM.c" value="SOURCE_C;CortexM0;;;;AF" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SDAT.c" value="SOURCE_C;CortexM0;;;;SDAT" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SDAT.h" value="HEADER;;;;;SDAT" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SDAT_aliases.h" value="HEADER;;;;;SDAT" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SDAT_PM.c" value="SOURCE_C;CortexM0;;;;SDAT" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SCLK.c" value="SOURCE_C;CortexM0;;;;SCLK" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SCLK.h" value="HEADER;;;;;SCLK" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SCLK_aliases.h" value="HEADER;;;;;SCLK" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SCLK_PM.c" value="SOURCE_C;CortexM0;;;;SCLK" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\BLE_1_bless_isr.c" value="SOURCE_C;CortexM0;;;;BLE_1_bless_isr" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\BLE_1_bless_isr.h" value="HEADER;;;;;BLE_1_bless_isr" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\I2C_1_SCBCLK.c" value="SOURCE_C;CortexM0;;;;I2C_1_SCBCLK" />
@@ -96,6 +152,24 @@
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_IRQ.h" value="HEADER;;;;;Volt_Regulator_IRQ" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_intClock.c" value="SOURCE_C;CortexM0;;;;Volt_Regulator_intClock" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\Volt_Regulator_intClock.h" value="HEADER;;;;;Volt_Regulator_intClock" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SCBCLK.c" value="SOURCE_C;CortexM0;;;;SPI_1_SCBCLK" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_SCBCLK.h" value="HEADER;;;;;SPI_1_SCBCLK" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_ss_s.c" value="SOURCE_C;CortexM0;;;;SPI_1_ss_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_ss_s.h" value="HEADER;;;;;SPI_1_ss_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_ss_s_aliases.h" value="HEADER;;;;;SPI_1_ss_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_ss_s_PM.c" value="SOURCE_C;CortexM0;;;;SPI_1_ss_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_miso_s.c" value="SOURCE_C;CortexM0;;;;SPI_1_miso_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_miso_s.h" value="HEADER;;;;;SPI_1_miso_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_miso_s_aliases.h" value="HEADER;;;;;SPI_1_miso_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_miso_s_PM.c" value="SOURCE_C;CortexM0;;;;SPI_1_miso_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_sclk_s.c" value="SOURCE_C;CortexM0;;;;SPI_1_sclk_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_sclk_s.h" value="HEADER;;;;;SPI_1_sclk_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_sclk_s_aliases.h" value="HEADER;;;;;SPI_1_sclk_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_sclk_s_PM.c" value="SOURCE_C;CortexM0;;;;SPI_1_sclk_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_mosi_s.c" value="SOURCE_C;CortexM0;;;;SPI_1_mosi_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_mosi_s.h" value="HEADER;;;;;SPI_1_mosi_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_mosi_s_aliases.h" value="HEADER;;;;;SPI_1_mosi_s" />
+  <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\SPI_1_mosi_s_PM.c" value="SOURCE_C;CortexM0;;;;SPI_1_mosi_s" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\codegentemp\cm0gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

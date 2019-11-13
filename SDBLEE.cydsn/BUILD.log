@@ -1,4 +1,4 @@
---------------- Build Started: 11/07/2019 11:52:55 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 11/13/2019 16:14:43 Project: SDBLEE, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
 In file included from debug.h:25:0,
@@ -10,47 +10,18 @@ In file included from main.c:22:0:
 common.h:26:0: note: this is the location of the previous definition
  #define DEBUG_UART_ENABLED          ENABLED
  ^
-main.c: In function 'updateThermostatData':
-main.c:91:40: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
-     thermoHandle.value.val = (int8 *) {thermo.compressor, thermo.fan,
-                                        ^
-main.c:91:40: note: (near initialization for '(anonymous)')
-main.c:91:59: warning: excess elements in scalar initializer
-     thermoHandle.value.val = (int8 *) {thermo.compressor, thermo.fan,
-                                                           ^
-main.c:91:59: note: (near initialization for '(anonymous)')
-main.c:92:5: warning: excess elements in scalar initializer
-     thermo.setTemperature, thermo.ambientTemp};
-     ^
-main.c:92:5: note: (near initialization for '(anonymous)')
-main.c:92:28: warning: excess elements in scalar initializer
-     thermo.setTemperature, thermo.ambientTemp};
-                            ^
-main.c:92:28: note: (near initialization for '(anonymous)')
-main.c:91:28: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
-     thermoHandle.value.val = (int8 *) {thermo.compressor, thermo.fan,
-                            ^
-main.c: In function 'send_Thermo_to_phone':
-main.c:190:42: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
-         thermoRead.value.val = (int8 *) {thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
-                                          ^
-main.c:190:42: note: (near initialization for '(anonymous)')
-main.c:190:61: warning: excess elements in scalar initializer
-         thermoRead.value.val = (int8 *) {thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
-                                                             ^
-main.c:190:61: note: (near initialization for '(anonymous)')
-main.c:190:73: warning: excess elements in scalar initializer
-         thermoRead.value.val = (int8 *) {thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
-                                                                         ^
-main.c:190:73: note: (near initialization for '(anonymous)')
-main.c:190:96: warning: excess elements in scalar initializer
-         thermoRead.value.val = (int8 *) {thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
-                                                                                                ^
-main.c:190:96: note: (near initialization for '(anonymous)')
-main.c:190:30: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
-         thermoRead.value.val = (int8 *) {thermo.compressor, thermo.fan, thermo.setTemperature, thermo.ambientTemp};
-                              ^
-arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a .\CortexM0\ARM_GCC_541\Debug\BLE_1.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_gatt.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_eventHandler.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_INT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_PVT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_custom.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_bless_isr.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\isr_1.o .\CortexM0\ARM_GCC_541\Debug\Blue.o .\CortexM0\ARM_GCC_541\Debug\Blue_PM.o .\CortexM0\ARM_GCC_541\Debug\Red.o .\CortexM0\ARM_GCC_541\Debug\Red_PM.o .\CortexM0\ARM_GCC_541\Debug\Green.o .\CortexM0\ARM_GCC_541\Debug\Green_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_INT.o .\CortexM0\ARM_GCC_541\Debug\volt.o .\CortexM0\ARM_GCC_541\Debug\volt_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_IRQ.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_intClock.o .\CortexM0\ARM_GCC_541\Debug\UART.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_541\Debug\UART_AsmGnu.o
+main.c: In function 'bleStack':
+main.c:103:25: warning: unused variable 'localAddr' [-Wunused-variable]
+     CYBLE_GAP_BD_ADDR_T localAddr;
+                         ^
+main.c:102:24: warning: unused variable 'apiResult' [-Wunused-variable]
+     CYBLE_API_RESULT_T apiResult;
+                        ^
+main.c: In function 'SendDataNotify':
+main.c:201:12: warning: unused variable 'dataForBLE' [-Wunused-variable]
+       int8 dataForBLE[36] = {sensorData.localTemp/10,sensorData.localTemp%10,sensorData.remoteTemp1/10, sensorData.remoteTemp1%10, sensorData.remoteTemp2/10, sensorData.remoteTemp2%10, 
+            ^
+arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a .\CortexM0\ARM_GCC_541\Debug\BLE_1.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_gatt.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_eventHandler.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_INT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_HAL_PVT.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_custom.o .\CortexM0\ARM_GCC_541\Debug\BLE_1_bless_isr.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\isr_1.o .\CortexM0\ARM_GCC_541\Debug\Blue.o .\CortexM0\ARM_GCC_541\Debug\Blue_PM.o .\CortexM0\ARM_GCC_541\Debug\Red.o .\CortexM0\ARM_GCC_541\Debug\Red_PM.o .\CortexM0\ARM_GCC_541\Debug\Green.o .\CortexM0\ARM_GCC_541\Debug\Green_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\I2C_1_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin.o .\CortexM0\ARM_GCC_541\Debug\CE_Pin_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_INT.o .\CortexM0\ARM_GCC_541\Debug\volt.o .\CortexM0\ARM_GCC_541\Debug\volt_PM.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_IRQ.o .\CortexM0\ARM_GCC_541\Debug\Volt_Regulator_intClock.o .\CortexM0\ARM_GCC_541\Debug\UART.o .\CortexM0\ARM_GCC_541\Debug\SPI_1.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_SPI_UART.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_PM.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_SPI.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_BOOT.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_SPI_BOOT.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_ss_s.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_ss_s_PM.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_miso_s.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_miso_s_PM.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_sclk_s.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_sclk_s_PM.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_mosi_s.o .\CortexM0\ARM_GCC_541\Debug\SPI_1_mosi_s_PM.o .\CortexM0\ARM_GCC_541\Debug\Comp_Out.o .\CortexM0\ARM_GCC_541\Debug\Comp_Out_PM.o .\CortexM0\ARM_GCC_541\Debug\Fan_High_Out.o .\CortexM0\ARM_GCC_541\Debug\Fan_High_Out_PM.o .\CortexM0\ARM_GCC_541\Debug\Fan_Low_Out.o .\CortexM0\ARM_GCC_541\Debug\Fan_Low_Out_PM.o .\CortexM0\ARM_GCC_541\Debug\ST1_2.o .\CortexM0\ARM_GCC_541\Debug\ST1_2_PM.o .\CortexM0\ARM_GCC_541\Debug\ST3_4.o .\CortexM0\ARM_GCC_541\Debug\ST3_4_PM.o .\CortexM0\ARM_GCC_541\Debug\COMP.o .\CortexM0\ARM_GCC_541\Debug\COMP_PM.o .\CortexM0\ARM_GCC_541\Debug\Fan_High.o .\CortexM0\ARM_GCC_541\Debug\Fan_High_PM.o .\CortexM0\ARM_GCC_541\Debug\Fan_Low.o .\CortexM0\ARM_GCC_541\Debug\Fan_Low_PM.o .\CortexM0\ARM_GCC_541\Debug\AF.o .\CortexM0\ARM_GCC_541\Debug\AF_PM.o .\CortexM0\ARM_GCC_541\Debug\SDAT.o .\CortexM0\ARM_GCC_541\Debug\SDAT_PM.o .\CortexM0\ARM_GCC_541\Debug\SCLK.o .\CortexM0\ARM_GCC_541\Debug\SCLK_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_541\Debug\UART_AsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf" .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\SD_I2C.o .\CortexM0\ARM_GCC_541\Debug\debug.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\SDBLEE.a "..\..\4.2\Downloads ( 4.2).cylib\BLE_v3_61\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a" -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/SDBLEE.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
 cyelftool.exe -C "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf" --flash_row_size 128 --flash_size 131072 --flash_offset 0x00000000
@@ -58,6 +29,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\CortexM0\ARM_GCC_541\Debug\SDBLEE.elf"
-Flash used: 92606 of 131072 bytes (70.7%).
-SRAM used: 11284 of 16384 bytes (68.9%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 11/07/2019 11:53:00 ---------------
+Flash used: 89326 of 131072 bytes (68.2%).
+SRAM used: 11216 of 16384 bytes (68.5%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 11/13/2019 16:14:45 ---------------

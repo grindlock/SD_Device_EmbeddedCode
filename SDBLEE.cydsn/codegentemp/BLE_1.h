@@ -116,7 +116,7 @@
 /* Align buffer size value to 4 */
 #define CYBLE_ALIGN_TO_4(x)                         ((((x) & 3u) == 0u) ? (x) : (((x) - ((x) & 3u)) + 4u))
     
-#define CYBLE_GAP_ROLE                              (0x05u)
+#define CYBLE_GAP_ROLE                              (0x01u)
 #define CYBLE_GAP_HCI                               (0x00u)
 #define CYBLE_GAP_PERIPHERAL                        (0x01u)
 #define CYBLE_GAP_CENTRAL                           (0x02u)
@@ -142,7 +142,7 @@
     #define CYBLE_GAPP_CONNECTION_INTERVAL_MIN      (0x0028u)
     #define CYBLE_GAPP_CONNECTION_INTERVAL_MAX      (0x0060u)
     #define CYBLE_GAPP_CONNECTION_SLAVE_LATENCY     (0x0000u)
-    #define CYBLE_GAPP_CONNECTION_TIME_OUT          (0x00C8u)
+    #define CYBLE_GAPP_CONNECTION_TIME_OUT          (0x03E8u)
 #endif /* CYBLE_GAP_ROLE_PERIPHERAL */
 
 #if(CYBLE_GAP_ROLE_CENTRAL || CYBLE_GAP_ROLE_OBSERVER)
@@ -178,6 +178,7 @@
 
 #define CYBLE_ADV_PKT_INDEX_FLAGS   (0x00u)
 #define CYBLE_ADV_PKT_INDEX_LOCAL_NAME   (0x03u)
+#define CYBLE_ADV_PKT_INDEX_SERVICE_UUID_16   (0x0Cu)
 
 #define CYBLE_SCN_PKT_INDEX_SERVICE_UUID_16   (0x00u)
 #define CYBLE_SCN_PKT_INDEX_SERVICE_SOLICITATION_16   (0x04u)
@@ -214,7 +215,7 @@
 #define CYBLE_GATT_MTU_PLUS_L2CAP_MEM_EXT   (CYBLE_ALIGN_TO_4(CYBLE_GATT_MTU + CYBLE_MEM_EXT_SZ + CYBLE_L2CAP_HDR_SZ))
 
 /* GATT Maximum attribute length */
-#define CYBLE_GATT_MAX_ATTR_LEN             ((0x002Au == 0u) ? (1u) : (0x002Au))
+#define CYBLE_GATT_MAX_ATTR_LEN             ((0x0016u == 0u) ? (1u) : (0x0016u))
 #define CYBLE_GATT_MAX_ATTR_LEN_PLUS_L2CAP_MEM_EXT \
                                     (CYBLE_ALIGN_TO_4(CYBLE_GATT_MAX_ATTR_LEN + CYBLE_MEM_EXT_SZ + CYBLE_L2CAP_HDR_SZ))
 

@@ -52,7 +52,17 @@ return Read_sensor_byte(address, reg) != 0x00 ? 1 : 0;
 }
 uint16 humidity_read(uint32 address, uint8 reg){
     uint16 humidity = 0;
-    humidity = ((125 * Read_sensor_word(address, reg))/65536)-6;
+    uint8 read[2] = {0,0};
+    I2C_1_I2CMasterSendStart(ADDR_HUMTEMP, I2C_1_I2C_WRITE_XFER_MODE, 100u);
+    I2C_1_I2CMasterWriteByte(REG_HUMSENSOR_HUM, 100u);
+    I2C_1_I2CMasterSendRestart(ADDR_HUMTEMP,I2C_1_I2C_READ_XFER_MODE, 100u);
+    I2C_1_I2CMasterReadByte(I2C_1_I2C_ACK_DATA,(uint8 *) &read[0],100u);
+    I2C_1_I2CMasterReadByte(I2C_1_I2C_NAK_DATA,(uint8 *) &read[1],100u);
+    I2C_1_I2CMasterSendStop(100u);
+
+humidity = ((read[0] << 8) | read[1]);
+
+    humidity = ((125 * humidity)/65536)-6;
     return humidity;
 }
 
@@ -175,5 +185,38 @@ int current_voltage_sensor_ID(uint32 address){
 int accelerametor_sensor_ID(){
  return Read_sensor_byte(ADDR_ACC,REG_ACCID) == 0xFA? 1: 0;   
 }
+
+void initialized_gpioExp(){
+   I2C_1_I2CMasterSendStart(ADDR_GPIO,I2C_1_I2C_WRITE_XFER_MODE, 100u);
+   I2C_1_I2CMasterWriteByte(REG_GPIO_CONFIG, 100u);
+   I2C_1_I2CMasterWriteByte(0xFF, 100u);
+   I2C_1_I2CMasterSendStop(100u);
+}
+
+uint8 read_gpioExp_pins(){
+   
+  // initialized_gpioExp(0xFF);
+
+    uint8 pins = 0u;
+
+   I2C_1_I2CMasterSendStart(ADDR_GPIO, I2C_1_I2C_WRITE_XFER_MODE, 100u);
+   I2C_1_I2CMasterWriteByte(REG_GPIO_READ, 100u);
+   I2C_1_I2CMasterSendRestart(ADDR_GPIO,I2C_1_I2C_READ_XFER_MODE, 100u);
+   I2C_1_I2CMasterReadByte(I2C_1_I2C_NAK_DATA,(uint8 *) &pins,100u);
+   I2C_1_I2CMasterSendStop(100u);
+    
+    return pins;
+}
+
+/*void write_gpioExp_pins(uint8 data){
+
+    initialized_gpioExp(0x00);
+
+   I2C_1_I2CMasterSendStart(ADDR_GPIO, I2C_1_I2C_WRITE_XFER_MODE, 100u);
+   I2C_1_I2CMasterWriteByte(REG_GPIO_WRITE, 100u);
+   I2C_1_I2CMasterWriteByte((uint8 *) &data,100u);
+   I2C_1_I2CMasterSendStop(100u);
+}*/
+
 
 /* [] END OF FILE */

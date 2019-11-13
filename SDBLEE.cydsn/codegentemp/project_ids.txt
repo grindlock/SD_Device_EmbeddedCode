@@ -1,6 +1,6 @@
-C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj|58250a0c-8cf1-4983-bf38-952a4cca8e5a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0074e948-379d-4294-966d-3a2506ae5234
-C:\Users\sergio\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|a2c0433a-1b58-4b3d-8adf-4d03a47698bd
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|75476df3-176b-4cfd-b63a-1f38bc7df195
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|90bb3f04-d190-481b-b694-bba2c13cd00f
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|523fb386-446a-4a69-bdcc-c2b52aa5d7d4
+C:\Users\sergio\Documents\PSoC Creator\SD_Device_EmbeddedCode\SDBLEE.cydsn\SDBLEE.cyprj|8180101d-d715-40dc-a925-d4e1ebcfb95d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c981ef8f-f56f-49f0-92a8-051bcc730609
+C:\Users\sergio\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|c59dc492-d812-4363-93b2-ffbc9557cd71
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a5fe7bf0-b105-4a6c-9c35-1b596e5d8b50
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|bed9fdef-211f-47c5-b02d-ba6f745f0425
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4f81f721-b74b-44af-8004-b2dcc681e9ce
